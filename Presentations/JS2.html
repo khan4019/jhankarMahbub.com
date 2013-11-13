@@ -1,0 +1,235 @@
+﻿<html>
+<head>
+<style>
+.editorArea{
+border:3px solid gray;
+font-size:2.0em;
+color:gray;
+border-radius:5px;
+padding:5px;
+width:800px;
+}
+textarea{
+font-size:1.3em;
+font-weight:bolder;
+padding-left:10px;
+}
+button{
+color:gray;
+}
+#runCode{
+font-size:1.5em;
+font-weight:bolder;
+color:purple;
+}
+
+#fixCode, #btnNext{
+font-size:0.7em;
+}
+#back{
+font-size:0.5em;
+display:none;
+}
+#outputArea{
+border-radius:5px;
+border:3px solid gray;
+height:200px;
+width:800px;
+padding:5px;
+}
+
+#outputArea p{
+font-size:1.5em;
+font-weight:bolder;
+}
+#output{
+color:gold;
+font-weight:bolder;
+font-size:3.5em;
+}
+.higherStep{
+  display:none;
+}
+</style>
+</head>
+<body>
+
+<div class="editorArea">
+<div id="0">
+তোমার তো দেখি হেব্বি সাহস, এই খানেও চইল্যা আইছো? <br/>
+<p>চইল্যা যখন আইছোই, তাহলে শুনো "আমি খুব সহজ সরল। জিনিসে জিনিসে ভেদাভেদ করি না" </p>
+<p>সে কোনো সংখা (number) হোক, টেক্সট (string) হোক, সত্য মিথ্যা (boolean) যাই হোক।</p>
+</div>
+<div id="1" class="higherStep">
+সব কিছুই আমার কাছে variable <br/>এইটা আমি আবার সংক্ষেপ করে বলি var (মানে variable এর প্রথম তিনটা লেটার )" <br/>
+<br/>
+একদম পানির মতো সহজ।<br/><br/>
+ কোনো সংখ্যা লাগলে লিখবা var x =5; আবার var y =10; <br/>  
+ আবার দুইটা যোগ ও করে ফেলতে পারো var z=x+y;<br/>
+ আর চাইলে বিয়োগ (var z=x-y;), <br/>
+ গুন (var z= x*y;), <br/>
+ ভাগ (var z=x/y;) ও করে ফেলতে পর 
+ <br/>
+ আর রেজাল্ট দেখতে চাইলে লিখো alert() যেমন , alert(z);
+</div>
+<div id="2" class="higherStep">
+একইভাবে আমি কোনো টেক্সট বা স্ট্রিং ও ব্যবহার করতে পারি। <br/>এই যেমন,<br/>
+var str ="my awesome string";<br/>
+var str2 ="another string";<br/>
+চাইলে স্ট্রিং দুইটারেও জোড়া দিতে পারো <br/><br/>
+var newStr  = str +str2;<br/><br/>
+ আর রেজাল্ট দেখতে চাইলে লিখো alert() যেমন , alert(newStr);
+</div>
+
+<div id="3" class="higherStep">
+আবার একই জায়গায় সত্য মিথ্যাও রাখতে পারো। যেমন, <br/><br/>
+var amiValo =true;<br/>
+ var tumiKharap = false; <br/><br/>
+ আর রেজাল্ট দেখতে চাইলে লিখো alert() যেমন , alert(amiValo);
+</div>
+
+<div id="4" class="higherStep">
+কোনো দুইটা জিনিস তুলনা করার জন্য অনেক উপায় আছে<br/>
+এই যেমন, <br/> 
+var x =3; <br/>
+var y =5;<br/>
+== দুইটা সমান চিহ্ন দিয়ে তুলনা করি সমান কিনা <br/>
+!= একটা আশ্চর্য ও একটা সমান চিহ্ন দিয়ে তুলনা করি অসমান কিনা <br/>
+x>y মানে, চেক করবে y এর চাইতে x বড় কিনা <br/>
+X &lt; y মানে, চেক করবে y এর চাইতে x ছোট কিনা  <br/>
+আর রেজাল্ট দেখতে চাইলে লিখো alert() যেমন , alert(x==y);
+</div>
+
+<div id="5" class="higherStep">
+আমি কিন্তু যে যেরকম তাকে সেরকম ভাবে দেখি।<br/>
+তাই x আর X আমার কাছে এক নয় <br/>
+X বড় হাতের, x ছোট হাতের <br/>
+তাই এই দুইটা সমান নয় <br/>
+মোদ্দাকথা আমি কেইস সেনসিটিভ (উল্টা পাল্টা কেইস নিয়ে আমার কাছে আসবেন না )<br/>
+var first = "x";<br/>
+var second = "X";<br/><br/>
+আর রেজাল্ট দেখতে চাইলে লিখো alert() যেমন , alert(first==second);
+</div>
+<div id="6" class="higherStep">
+তোমার যদি এক টাইপের জিনিস অনেকগুলা থাকে।<br/>
+এই যেমন ধরো তোমার অনেকগুলা সংখ্যা আছে।<br/>
+তাইলে তুমি পন্ডিত অনেকগুলা var লিখতে পারো। যেমন,<br/><br/>
+var a=3; var b=5; var c=6; var d=9----<br/>
+আমি গাধায় সেটা না করে array লিখি<br/>
+array লিখতে হয় [ ] থার্ড ব্রেকেটের মধ্যে। যেমন,<br/><br/>
+var myArray = [3,5,6,9];<br/><br/>
+আর array এর প্রথম সংখ্যা পড়ার উপায়  myArray[0];<br/><br/>
+আর রেজাল্ট দেখতে চাইলে লিখো alert() যেমন , alert(myArray[1]);
+</div>
+
+<div id="7" class="higherStep">
+<h3>সুধীমন্ডলী,</h3>
+<br/>আমরা আজকের অনুষ্ঠানের শেষপ্রান্তে চলে এসেছি। 
+আমার সম্পর্কে আরো জানতে  <a href="JS3.html">ক্লিক করুন </a>
+
+</div>
+
+
+
+<textarea id="codeWritten" rows="3" cols="35"></textarea>
+<button id="runCode">Run</button>
+<button class="smallButton" id="btnNext"> Next</button>
+<button class="smallButton" id ="back">Go Back</button>
+<button class="smallButton" id="fixCode">Something is wrong. Fix the code!</button>
+</div>
+<div id="outputArea">
+<p>Error (if any):</p>
+<div id="output"></div>
+</div>
+<script src="../scripts/jquery-1.8.3.js"></script>
+<script>
+var count =0;
+var name = null;
+var step={
+0:{
+help:'  '
+,
+code:'alert("Click on next button")'
+},
+1:{
+help:' ',
+code:'var x=3; var y=5; var z=x+y; alert(z);'
+},
+2:{
+help:'' ,
+code:'var str ="my awesome string"; var str2 ="another string"; var newStr  = str +str; alert(newStr);'
+},
+3:{
+help:'',
+code:'var amiValo =true; var tumiKharap = false; alert(amiValo);'
+},
+4:{
+help:' আরে পাঙ্খা !!! আমি মানুষের বারোটা বাজাইতে পারি। তোমার কয়টা বাজাইছি সেই খবর আছে? জানতে মুন্চায়? লিখে ফেলো new Date()',
+code:'var x=3; var y=5; alert(x==y);'
+},
+5:{
+help:'',
+code:'var first ="x"; var second="X"; alert(first==second);'
+},
+6:{
+help:'',
+code:'var myArray = [3,5,6,9]; alert(myArray[1]);'
+},
+7:{
+help:'সুধীমন্ডলী, আমরা আজকের অনুষ্ঠানের শেষপ্রান্তে চলে এসেছি। আমার সম্পর্কে আরো জানতে অথবা প্রেম করতে চাইলে গুগলে সার্চ করুন Javascript for beginner. ভাই, গুগল কি জিনিস? উত্তর, দুরে গিয়া মর?',
+code:'var myArray = [3,5,6,9]; alert(myArray[1]);'
+}
+
+}
+
+
+
+$('#runCode').click(function(){
+	var code = $('#codeWritten').val(),
+		result=null, 
+		success=true;
+	if(!code) {alert('Write something!'); return;}
+	if(/[^\x00-\x80]+/.test(code)){alert('Please Write in English Only'); return;}
+	
+	try{
+		result = eval(code);
+	}
+	catch(ex){
+		result=ex;
+		success=false;
+	}
+	$('#output').text(result);
+	if(success && count==0){
+		$('#back').show();		
+	}
+});
+function cleanupCode(){
+	$('#codeWritten').val('');
+    $('#output').text('');	
+}
+$('#fixCode').click(function(){
+	$('#codeWritten').val(step[count].code);
+});
+
+
+$('#btnNext').click(function(){	
+	if(count<=6) {
+		$("#"+count).hide();
+		count=count+1;
+		$("#"+count).show();
+		cleanupCode();
+	}
+});
+
+$('#back').click(function(){	
+	if(count>0 && count<=7) {
+		$("#"+count).hide();
+		count=count-1;		
+		$("#"+count).show();
+		cleanupCode();
+	}
+});
+
+</script>
+</body>
+</html>

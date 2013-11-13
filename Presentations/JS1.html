@@ -1,0 +1,143 @@
+﻿<html>
+<head>
+<style>
+.editorArea{
+border:3px solid gray;
+font-size:2.5em;
+color:gray;
+border-radius:5px;
+padding:5px;
+width:800px;
+}
+textarea{
+font-size:1.3em;
+font-weight:bolder;
+padding-left:10px;
+}
+button{
+color:gray;
+}
+#runCode{
+font-size:1.5em;
+font-weight:bolder;
+color:purple;
+}
+#fixCode{
+font-size:0.7em;
+}
+#back{
+font-size:0.5em;
+display:none;
+}
+#outputArea{
+border-radius:5px;
+border:3px solid gray;
+height:200px;
+width:800px;
+padding:5px;
+}
+
+#outputArea p{
+font-size:1.5em;
+font-weight:bolder;
+}
+#output{
+color:gold;
+font-weight:bolder;
+font-size:3.5em;
+}
+</style>
+</head>
+<body>
+
+<div class="editorArea">
+<div id="helperText"></div>
+
+<textarea id="codeWritten" rows="3" cols="30"></textarea>
+<button id="runCode">Run</button>
+<button class="smallButton" id ="back">Go Back</button>
+<button class="smallButton" id="fixCode">Something is wrong. Fix the code!</button>
+</div>
+<div id="outputArea">
+<p>Output</p>
+<div id="output"></div>
+</div>
+<script src="../scripts/jquery-1.8.3.js"></script>
+<script>
+var count =0;
+var name = null;
+var step={
+0:{
+help:' আমি মো: জাভাস্ক্রিপ্ট আলী । দুনিয়ার সব ওয়েবসাইটের অলি গলি আমার আখড়া। তুমি স্মার্ট হইতে চাইলে আমার কোনো বিকল্প নাই। আচ্ছা তোমার নাম কি ? (ইংরেজিতে লিখো) ',
+code:'Jhankar Mahbub'
+},
+1:{
+help:' আমি মাইনসেরে দৌড়ের উপ্রে রাখতে পারি। তুমি কি কাউরে দৌড়ের উপ্রে রাখতে চাও? চাইলে  alert () লিখো। এবং () এর ভিতরে কোটেশনের  মধ্যে সতর্ক বার্তা লিখো। যেমন, alert("Khaisi Tore");',
+code:'alert("Khaisi Tore")'
+},
+2:{
+help:' বাহ তুমি তো হেব্বি দেখি !! কারো কাছ থেকে কথা নিশ্চিত হইতে চাইলে confirm () লিখো। ও হা  () মধ্যে ডাবল কোটেশন দিয়ে প্রশ্ন করো। যেমন,  confirm("Are you kudrat?");',
+code:'confirm("Are you Kudrat?")'
+},
+3:{
+help:'পুরাই উড়াধুরা !! জানো আমি অংকে লেটার পাইছিলাম। তুমি পাশ করেছো তো? যদি পাশ করে থাকো, তাইলে কিছু খুচরা অংক করে ফেলতো, চট জলদি। যেমন লিখে ফেলো,  4+3 অথবা  5*2 অথবা 17+2, ইত্যাদি.',
+code:'4+3'
+},
+4:{
+help:' আরে পাঙ্খা !!! আমি মানুষের বারোটা বাজাইতে পারি। তোমার কয়টা বাজাইছি সেই খবর আছে? জানতে মুন্চায়? লিখে ফেলো new Date()',
+code:'new Date()'
+},
+5:{
+help:' পুরাই লাইনে চইল্লা আইছ দেহি !!! এখন তোমারে স্মার্ট বানাই দেই। অনেক গুলা সংখ্যার মধ্যে সর্বোচ্চ সংখ্যা পেতে চাও? Math.max() লিখে ফেলো। আর সংখ্যাগুলোর মধ্যে কমা(,) দিবা কিন্তু যেমন , Math.max(2,5,6,9,21) আর তুমি চাইলে সবচেয়ে ছোট সংখ্যাটিও পেতে পারো Math.min(2,5,6,9,21)',
+code:'Math.max(2,5,6,9,21)'
+},
+6:{
+help:'সুধীমন্ডলী, আমরা আজকের অনুষ্ঠানের শেষপ্রান্তে চলে এসেছি। আমার সম্পর্কে আরো জানতে, www.jhankarmahbub.com গিয়ে নিচের সবচেয়ে দানে ডিমটিতে (Tutorial) ক্লিক করুন। তারপর Javascript part 2 ক্লিক করুন আর ভালো না লাগলে গুগলে সার্চ করুন Javascript for beginner. ভাই, গুগল কি জিনিস? উত্তর, দুরে গিয়া মর?',
+code:'Thank u'
+}
+
+}
+
+$('#helperText').text(step[0].help)
+
+$('#runCode').click(function(){
+	var code = $('#codeWritten').val(),
+		result=null, 
+		success=true;
+	if(!code) {alert('Write something!'); return;}
+	if(/[^\x00-\x80]+/.test(code)){alert('Please Write in English Only'); return;}
+	if(count==0) code ='"Hello !! '+code+'"';
+	try{
+		result = eval(code);
+	}
+	catch(ex){
+		result=ex;
+		success=false;
+	}
+	$('#output').text(result);
+	if(success){
+		$('#back').show();
+		if(count<=6){
+			count++;
+		}		
+		updateState();
+	}
+});
+function updateState(){
+	$('#codeWritten').val('');
+	$('#helperText').text(step[count].help)
+}
+$('#fixCode').click(function(){
+	$('#codeWritten').val(step[count].code);
+});
+
+$('#back').click(function(){	
+	if(count>0 && count<=6) {
+		count=count-1;
+		updateState();
+	}
+});
+
+</script>
+</body>
+</html>

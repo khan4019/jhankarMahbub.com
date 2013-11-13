@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Furiously Fast Web</title>
+	
+	<meta name="description" content="A jQuery library for modern HTML presentations">
+	<meta name="author" content="Caleb Troughton">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="deckStyles/deck.core.css">
+	
+	<link rel="stylesheet" href="deckStyles/deck.goto.css">
+	<link rel="stylesheet" href="deckStyles/deck.menu.css">
+	<link rel="stylesheet" href="deckStyles/deck.navigation.css">
+	                             
+	<link rel="stylesheet" href="deckStyles/deck.status.css">
+	<link rel="stylesheet" href="deckStyles/deck.hash.css">
+	<link rel="stylesheet" href="deckStyles/deck.scale.css">
+	
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="deckStyles/web-2.0.css">
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="deckStyles/horizontal-slide.css">
+	
+	<script src="deckScripts/modernizr.custom.js"></script>
+	
+</head>
+
+<body class="deck-container">
+
+
+<!-- Begin slides -->
+<section class="slide" id="title-slide">
+	<img src="webSpeed/html51.jpg">
+</section>
+
+<section class="slide" id="title-slide">
+	<h1>Make Web Furiously Fast</h1>
+	<h2 class="slide" style="text-decoration:line-through;">Simple tricks to make web 20 times faster</h2>
+</section>
+<section class="slide" id="core-feature">	
+	<h2>Keep it aside</h2>
+	<h3>Before: x sec</h3>
+	<h3>After: y sec</h3>
+	<h3 class ="slide">Improvement, I = x/y, where y>0</h3>
+	<h3 class="slide">Improvement: 4.0/2.0 = 2 times faster</h3>
+	<img class="slide" src="webSpeed/meter/meterLoad.png">
+</section>
+<section class="slide" id="core-feature">
+	<h2>Expectations?</h2>
+	<ul>
+		<li>
+			<h3 class="slide">Checklist of popular tricks</h3>			
+		</li>
+		<li>
+			<h3 class="slide">List of references</h3>			
+		</li>
+		<li>
+			<h3 class="slide">Collection of Tools</h3>			
+		</li>		
+	</ul>		
+</section>
+
+<section class="slide" id="title-slide">	
+	<h1>Benchmark</h1>
+	<img src="webSpeed/loadError8.png">
+	<br/>
+	<a class="refName" href="http://www.nngroup.com/articles/response-times-3-important-limits/">Response Time: Important Limits (Nielsen Norman Group)</a>
+</section>
+
+<section class="slide" id="title-slide">	
+	<div>
+	<h1>How fast is fast</h1>
+	<img src="webSpeed/bike.jpeg">
+	</div>
+</section>
+
+
+<section class="slide" id="title-slide">	
+	<div>
+	<h1>How slow is Slow</h1>		
+	<img src="webSpeed/ambulence.jpg">
+	</div>
+	
+</section>
+
+
+<section class="slide" id="title-slide">	
+	<div>
+	
+	<h1>Load <2 secs </h1>
+	<h2> 47% users Expect</h2>
+	
+	
+	<p class=" refName"> source: kissmetrics.com</p>
+	</div>
+</section>
+<section class="slide" id="title-slide">
+	<h1>Load >3 secs </h1>
+	<h2 class="slide"> 40% users leave your website</h2>
+	<p class=" refName"> source: kissmetrics.com</p>
+</section>
+<section class="slide" id="title-slide">	
+	<div class="slide">
+	<img src="webSpeed/content/golden-waterfall.png">
+	</div>
+	<h1>Front vs Back</h1>		
+	<a class=" refName" href="http://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/">www.stevesouders.com</a>
+</section>
+<section class="slide" id="title-slide">	
+	<div class="slide">
+	<img src="webSpeed/content/golden-top10.png">
+	</div>
+	<h1>Top 10</h1>		
+	<a class=" refName" href="http://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/">www.stevesouders.com</a>
+</section>
+<section class="slide" id="title-slide">	
+	<div class="slide">
+	<img src="webSpeed/content/golden-9990.png">
+	</div>
+	<h1>Medium</h1>		
+	<a class=" refName" href="http://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/">www.stevesouders.com</a>
+</section>
+<section class="slide" id="title-slide">	
+	<div class="slide">
+	<img src="webSpeed/content.png">
+	</div>
+	<h1>Content?</h1>		
+	<a class=" refName" href="http://httparchive.org/interesting.php">httparchive.org</a>
+</section>
+<!--
+<section class="slide" id="title-slide">	
+	<div class="slide">
+	<img src="webSpeed/content/top1000pageGrowth.png">
+	</div>
+	<h1>Content Trend</h1>		
+	<br/>
+	<br/>
+	<br/>
+	<a class=" refName" href="http://httparchive.org/trends.php?s=Top100&minlabel=May+1+2012&maxlabel=May+1+2013">www.httparchive.org</a>
+</section>
+-->
+
+<section class="slide" id="title-slide">
+	<img src="webSpeed/content.png">
+	<h1>Image (60.93%)!!</h1>		
+</section>
+
+<section class="slide" id="title-slide">
+	<h1>PNG vs JPEG</h1>
+<a href="http://www.killersites.com/articles_2005/theory/images-in-webpages.php">When to use JPEG or PNG</a>
+</section>
+
+<section class="slide" id="core-feature">	
+	<h2>PNG </h2>
+	<ul>
+		<li>
+			<h3 class="slide">Alpha-channel</h3>			
+		</li>
+		<li>
+			<h3 class="slide">Less noise for texts</h3>			
+		</li>
+		<li>
+			<h3 class="slide">Lossless compression</h3>			
+		</li>
+		<li>
+			<h3 class="slide">Not good compression for large digital photo</h3>			
+		</li>
+	</ul>
+<a class=" refName" href="http://www.ransen.com/articles/Formats/Image-Formats.htm">Choose right image format</a>	
+</section>
+
+<section class="slide" id="core-feature">
+	<h2>JPEG</h2>
+	<ul>
+		<li>
+			<h3 class="slide">Digital photo</h3>			
+		</li>
+		<li>
+			<h3 class="slide">Full color</h3>			
+		</li>
+		<li>
+			<h3 class="slide">Lossy format</h3>			
+		</li>		
+	</ul>	
+	<a href="http://www.irt.org/articles/js206/">Right format of image</a>
+</section>
+
+<section class="slide" id="title-slide">
+	<h1>I need images. What can I do?</h1>
+</section>
+<section class="slide" id="title-slide">
+	<h1>1. Compress</h1>
+</section>
+<!--
+<section class="slide" id="title-slide">	
+	<div class="slide">
+	<img src="webSpeed/compressionTest/Test1-500px.png">
+	</div>
+	<h1>Test -1</h1>
+	<h3>48 images</h3>
+	<h3>all 500 px</h3>
+	<h3>22 MB total size of the images</h3>
+	<h3>6.1 sec to load</h3>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<a href="http://www.yottaa.com/blog/bid/266307/The-Impact-of-Image-Compression-on-Page-Load-Time">Yotta: impact of image compression</a>
+</section>
+<section class="slide" id="title-slide">	
+	<div class="slide">
+	<img src="webSpeed/compressionTest/Test2-100px.png">
+	</div>
+	<h1>Test -2</h1>
+	<h3>reduced to 100 px</h3>
+	<h3>1.3MB</h3>
+	<h3>2.5sec to load</h3>
+</section>
+<section class="slide" id="title-slide">	
+	<div class="slide">
+	<img src="webSpeed/compressionTest/Test3-100px-opt.png">
+	</div>
+	<h1>Test -3</h1>
+	<h3>Optimized the images</h3>
+	<h3>179KB</h3>
+	<h3>1.8sec to load</h3>
+</section>
+--->
+<section class="slide" id="title-slide">	
+	<div class="slide">
+	<img src="webSpeed/compressionTest/summary.png">
+	</div>
+	<h1>Compression</h1>	
+	<br/>
+	<br/>
+	<br/>
+	<a class=" refName" href="http://www.yottaa.com/blog/bid/266307/The-Impact-of-Image-Compression-on-Page-Load-Time">Yotta: Impact of image compression</a>
+</section>
+<section class="slide" id="core-feature">	
+	<h2>6.13/1.8 = 3.4 times</h2>
+	<img src="webSpeed/meter/phone1.jpg">
+</section>
+<section class="slide" id="title-slide">
+	<h1>Compression (Tools)</h1>
+	<a href="http://freecode.com/projects/jpegoptim">JPEG Optimum</a> <br/>
+	<a href="http://optipng.sourceforge.net/">Opti PNG</a>&nbsp;<br/>
+	<a href="http://www.advsys.net/ken/util/pngout.htm">PNG Out</a>&nbsp;<br/>
+	<a href="http://tinypng.org/"> Tiny png</a>&nbsp;		<br/>
+	<a href="http://www.smushit.com/ysmush.it/">Smush it</a><br/>
+	
+</section>
+
+<section class="slide" id="title-slide">
+	<h1>Then?</h1>		
+</section>
+<section class="slide" id="title-slide">		
+	<h1>2. Combine</h1>		
+</section>
+<section class="slide" id="title-slide">	
+	<div class="slide">
+	<img src="webSpeed/spriteYouTube.png"/>
+	</div>
+	<h1>Sprite</h1>	
+	<br/>
+	<a href="http://coding.smashingmagazine.com/2009/04/27/the-mystery-of-css-sprites-techniques-tools-and-tutorials/">Source: Sprite mastery</a>
+	<a href="http://www.blueboltsolutions.com/decrease-page-load-time-with-css-image-sprites-blog-post.aspx">How sprite works: blueboldsolutions.com</a><br/>
+	<a href="https://developers.google.com/speed/docs/best-practices/rtt#SpriteImages">Sprite recommendation</a><br/>
+	<a href="http://alistapart.com/article/sprites/">aliasapart.com.</a><br/>
+	<a href ="http://writegoodcode.com/#idea">Sprite improvement: writegoodcode.com </a><br/>
+</section>
+<section class="slide" id="core-feature">
+	<h2>How Sprite Works</h2>			
+	<img src="webSpeed/sprites/spriteBeforeClick.png"></img>	
+</section>
+<section class="slide" id="core-feature">
+	<h2>How Sprite Works</h2>			
+	<img src="webSpeed/sprites/spriteAfterClick.png"></img>
+</section>
+<section class="slide" id="core-feature">
+	<h1>Sprite (Tools)</h1>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<a href="http://spriteme.org/">Sprite me</a>
+	
+	<a href="http://spritepad.wearekiss.com/">Sprite pad</h3>
+	<br/>
+	<a href="http://css.spritegen.com/">Sprite gen</a>
+	<br/>
+	<a href="http://css-sprit.es/">CSS sprite</a>
+</section>
+<section class="slide" id="title-slide">		
+	<h1>Next?</h1>
+</section>
+<section class="slide" id="title-slide">		
+	<h1>3. Cache</h1>
+</section>
+<section class="slide" id="core-feature">
+	<h2>Cache static contents</h2>		
+	<h3 class="slide"> Browser caching</h3>
+	<h3 class="slide"> Proxy caching (CDN)</h3>
+	<h3 class="slide"> Distributed DNS</h3>
+	<br/>
+	<br/>
+	<a class="refName" href="http://www.mnot.net/cache_docs/"> Caching tutorial</a>
+	<br/>
+	<a class="refName" href="http://httpd.apache.org/docs/2.2/caching.html">Apache Caching Guide</a>
+	<br/>
+	<a class=" refName" href="https://developers.google.com/speed/docs/best-practices/caching">Optimize Caching</a>
+</section>
+<section class="slide" id="core-feature">
+	<h2>Cache test (2007)</h2>		
+	<img class="slide" src="webSpeed/wtf.jpg"></img>
+	<img class="slide" src="webSpeed/boss1.jpg"></img>
+	<img class="slide" src="webSpeed/train1.jpg"></img>
+</section>
+<section class="slide" id="core-feature">
+	<h2>Cache test (2010)</h2>		
+	<img src="webSpeed/before-cache.jpg"></img>
+	
+	<a class=" refName" href="http://c3mdigital.com/reduce-page-loading-time-w3-total-cache/">W3 Total Cache</a>
+</section>
+<section class="slide" id="core-feature">
+	<h2>Cached</h2>			
+	<img src="webSpeed/thumbsdown.jpg"></img>
+	<a class=" refName" href="http://c3mdigital.com/reduce-page-loading-time-w3-total-cache/">W3 Total Cache</a>
+</section>
+<section class="slide" id="core-feature">	
+	<h2>9.42/2.5 = 3.8 times</h2>
+	<h3>Position:3.4 + 3.8 = 7.2 times</h3>
+	<img src="webSpeed/phone4.jpg">
+</section>
+<section class="slide" id="core-feature">
+	<h2>Cache setting IIS</h2>
+	<img src="webSpeed/html5.jpg"></img>
+	<a class=" refName" href="http://technet.microsoft.com/en-us/library/cc754957(v=ws.10).aspx">Windows Server</a>
+</section>
+<section class="slide" id="core-feature">
+	<h2>Content Delivery Network (CDN)</h2>
+	<img class="slide" src="webSpeed/trouble.jpg"></img>
+	<a class=" refName" href="http://www.nczonline.net/blog/2011/11/29/how-content-delivery-networks-cdns-work/">How CDN Work</a>	
+	<br/>
+	<a href="http://trafficserver.apache.org/">Apache Traffic Server</a>	
+	<br/>
+	<a href="http://dyn.com/dns/">dyn.com</a>
+</section>
+<section class="slide" id="core-feature">
+	<h2>CDN Test</h2>		
+	<img src="webSpeed/train5.jpg"></img>
+	
+	<a class=" refName" href="http://blog.netdna.com/maxcdn/how-to-achieve-a-2-second-page-load-with-a-magento-ecommerce-store/">NetDNA.com</a>
+</section>
+<section class="slide" id="core-feature">	
+	<h2>4.479/2.053 = 2.2 times</h2>
+	<h3>Position:7.2 + 2.2 = 9.4 times</h3>
+	<img src="webSpeed/meter/meter94.jpg">
+</section>
+<section class="slide" id="core-feature">
+	<h2>Distributed DNS Provider</h2>
+	<img src="webSpeed/DNSServer.png"></img>
+	<a class=" refName" href="http://blog.netdna.com/maxcdn/how-to-achieve-a-2-second-page-load-with-a-magento-ecommerce-store/">NetDNA.com</a>
+	<br/>
+	<br/>
+	<a href="http://pcsupport.about.com/od/tipstricks/a/free-public-dns-servers.htm">List of Free DNS Service Provider</a>
+	<br/>
+	<br/>
+	<a href="http://dyn.com/dns/">dyn.com</a>
+</section>
+<section class="slide" id="core-feature">	
+	<h2>0.228/0.150 = 1.5 times</h2>
+	<h3>Position:9.4 + 1.5 = 10.9 times</h3>
+	<img src="webSpeed/meter/meter109.jpg">
+</section>
+<section class="slide" id="title-slide">		
+	<h1>OK?</h1>
+</section>
+<section class="slide" id="core-feature">		
+	<h1>4.JAIL</h1>	
+	<h3> Jquery asynchronous image loader</h3>	
+	<br/>
+	<a href="https://github.com/sebarmeli/JAIL">Jail</a>
+	<br/>
+	<a href="https://github.com/tuupola/jquery_lazyload">Jquery Lazy load</a>
+	<br/>
+	<a href="https://github.com/nostra13/Android-Universal-Image-Loader"> Universal Lazy loader</a>
+</section>
+
+<section class="slide" id="title-slide">		
+	<h1>Lazy load benefits</h1>		
+	<img src="webSpeed/train4.jpg"></img>
+<a href="http://engineering.slideshare.net/2011/03/faster-page-loads-with-image-lazy-loading/">Slide share: Lazy loading benefit</a>
+</section>
+<section class="slide" id="core-feature">	
+	<h2>24.9/13.2 = 1.9 times</h2>
+	<h3>Position:10.9 + 1.9 = 12.8 times</h3>
+	<img src="webSpeed/sleep.jpg">
+</section>
+<section class="slide" id="title-slide">
+	<h1>5. Font Icon</h1>		
+	<a href="http://astronautweb.co/snippet/font-awesome/">Click: Astronaut web.co</a>
+	<br/>
+	<a href="http://css-tricks.com/examples/IconFont/">CSS Trics: Icon Font </a>
+	<br/>
+	<a href="http://weloveiconfonts.com/">We Love Icon Font</a>
+	<br/>
+	<a href="http://css-tricks.com/five-use-cases-for-icon-fonts/">5 Use case for Icon Font</a>
+	<br/>
+	<a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>
+	<br/>
+	<a href="http://icomoon.io/">Ico Moon</a>
+	<br/>
+	<a href="http://fontello.com/">FonTello.comn</a>
+</section>
+<section class="slide" id="title-slide">
+	<h1>6. Css icon</h1>		
+	<a href="http://css-tricks.com/examples/ShapesOfCSS/">Click: CSS-tricks.com</a>
+</section>
+<section class="slide" id="title-slide">
+	<h1>7. WebP</h1>		
+</section>
+
+<section class="slide" id="core-feature">
+	<h2>WebP</h2>
+	<ul>
+		<li>
+			<h3 class="slide">Image format by Google</h3>			
+		</li>
+		<li>
+			<h3 class="slide">25-34% more compression than JPEG</h3>			
+		</li>
+		<li>
+			<h3 class="slide"> 28% smaller in size than to PNG</h3>			
+		</li>		
+	</ul>	
+	<a href="https://developers.google.com/speed/webp/gallery1">Google compare: webp</a>
+	<br/>
+	<a href="http://www.igvita.com/2013/03/07/faster-smaller-and-more-beautiful-web-with-webp/"> Faster and more beautiful website with WebP</a>
+</section>
+<section class="slide" id="title-slide">		
+	<h1>Anything Else?</h1>
+</section>
+<section class="slide" id="title-slide">
+	<h1>8. Parallel Download</h1>		
+</section>
+<section class="slide" id="core-feature">
+	<h2>Parallel Download </h2>
+	<img class="slide" src="webSpeed/roundTrip/paralleldownload.png"></img>
+	<a class=" refName" href="https://developers.google.com/speed/docs/best-practices/rtt#ParallelizeDownloads">Google: Parallel download google map</a>
+</section>
+<section class="slide" id="title-slide">
+	<h1>9. Prefetch</h1>	
+	<a href="http://davidwalsh.name/html5-prefetch"> HTML5 Prefetching</a>
+	<a href="https://developers.google.com/speed/articles/prefetching">Picasa: Prefetch resources</a>
+	<br/>
+<a href="http://www.4thkingdom.com/public/computers/789073-web-site-speed-prefetching-images-css/view-post.html">Prefetching Images</a>	
+</section>
+<section class="slide" id="title-slide">		
+	<h1>That's all about Image.</h1>
+</section>
+<section class="slide" id="title-slide">
+	<img src="webSpeed/content.png"></img>
+	<h1>Scripts (+Styles)</h1>		
+	<br/>
+	<br/>
+	<h2>18.21%</h2>
+</section>
+<!--
+<section class="slide" id="core-feature">
+	<h2>Scripts at NMA?</h2>
+	<ul>
+		<li>
+			<h3 class="slide">CG master page has 21 scripts tag</h3>			
+		</li>
+		<li>
+			<h3 class="slide">Exactly: 542Kb</h3>			
+		</li>
+		<li>
+			<h3 class="slide"> CGReports.aspx has 9 scripts tag</h3>			
+		</li>		
+		<li>
+			<h3 class="slide">Exactly: 411Kb</h3>			
+		</li>
+		<li>
+			<h3 class="slide">Total: 953Kb</h3>			
+		</li>
+	</ul>
+</section>
+<section class="slide" id="core-feature">
+	<h2>Styles at NMA?</h2>
+	<ul>
+		<li>
+			<h3 class="slide">CG master page has 10 external styles</h3>			
+		</li>
+		<li>
+			<h3 class="slide">Exactly: 58Kb</h3>			
+		</li>
+		<li>
+			<h3 class="slide">Scripts + Styles: 1011Kb</h3>			
+		</li>			
+	</ul>
+</section>
+<section class="slide" id="title-slide">
+	<img src="webSpeed/contentTop100.png"></img>
+	<h1>What about top 100?</h1>		
+</section>
+-->
+<section class="slide" id="title-slide">	
+	<h1>What can we do with Scripts?</h1>		
+</section>
+<section class="slide" id="title-slide">	
+	<h1>1.Minify</h1>	
+	<img class="slide" src="webSpeed/minifyJS.png"></img>
+	<br/>
+	<a href="http://www.yottaa.com/blog/bid/259514/How-Does-Reducing-JavaScript-Requests-Minifying-JavaScript-Impact-Site-Performance"> yottaa: JS optimization</a>	
+</section>
+<section class="slide" id="core-feature">	
+	<h2>2.543/2.075 = 1.3 times</h2>
+	<h3>Position:12.8 + 1.3 = 14.1 times</h3>
+	<img src="webSpeed/meter/meter141.jpg">
+</section>
+<section class="slide" id="title-slide">
+	<h1>Minify (Tools)</h1>			
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<a href="http://closure-compiler.appspot.com/home">ggl closure (demo)</a>
+	<br/>
+	<a href="http://jscompress.com/">JS Compress</a>
+	<br/>
+	<a href="http://marijnhaverbeke.nl/uglifyjs">Uglify</a>
+	<br/>
+	<a href="http://crockford.com/javascript/jsmin">JS Min</a>
+	<br/>
+	<br/>
+	<a href="http://csstidy.sourceforge.net/">CSS Tidy</a>
+	<br/>
+	<a href="http://www.minifycss.com/css-compressor/">Minify CSS</a>	
+	<br/>
+	<a href="http://cssminifier.com/">CSS Minifier</a>
+</section>
+<section class="slide" id="title-slide">	
+	<h1>2.Combine</h1>		
+</section>
+<section class="slide" id="core-feature">
+	<h2>Combine JS</h2>		
+	<img class="slide" src="webSpeed/roundTrip/seperateJS.png"></img>
+	<img class="slide" src="webSpeed/roundTrip/combinedJS.png"></img>
+	<a class=" refName" href="https://developers.google.com/speed/docs/best-practices/rtt#CombineExternalJS">Google Best Practice</a>
+</section>
+<section class="slide" id="core-feature">	
+	<h2>4.46/1.87 = 2.4 times</h2>
+	<h3>Position:14.1 + 2.4 = 16.5 times</h3>
+	<img src="webSpeed/meter/meter165.jpg">
+</section>
+<section class="slide" id="title-slide">	
+	<h1>3.Position</h1>		
+</section>
+<section class="slide" id="core-feature">
+	<h2>Order matters</h2>		
+	<h3 class="slide"> Lets watch Video!!</h3>
+	<br/>
+	<a href="http://www.youtube.com/watch?v=AWF7ZzPyagE&feature=youtu.be&t=58s">Cuzillion demo (youtube)</a>
+	<br/>
+	<br/>
+	<a href="https://developers.google.com/speed/articles/include-scripts-properly">Properly include style and scripts</a>
+</section>
+<section class="slide" id="title-slide">
+	<h1>2.38/1.4 = 1.7 times</h1>
+</section>
+<section class="slide" id="core-feature">	
+	<h3>Position:16.5 + 1.7 = 18.2 times</h3>
+	<img src="webSpeed/meter/meter182.jpg">
+</section>
+<section class="slide" id="title-slide">
+	<h1>2.33/1.4 = 1.7 times</h1>
+</section>
+<section class="slide" id="core-feature">
+	<h3>Position:18.2 + 1.7 = 19.9 times</h3>
+	<img class src="webSpeed/meter/meter199.jpg">
+</section>
+<section class="slide" id="core-feature">
+	<h2>Asynchronous Resources</h2>
+	<a class=" refName" href="https://developers.google.com/speed/docs/best-practices/rtt#PreferAsyncResources">Google Best Practice</a>
+</section>
+<!--
+<section class="slide" id="core-feature">
+	<h2>Minimize Round Trip (Bonus)</h2>
+	<ul>
+		<li>
+			<h3>Minimize redirects</h3>			
+		</li>
+		<li>
+			<h3>Avoid bad request</h3>			
+		</li>	
+	</ul>
+	<a href="https://developers.google.com/speed/docs/best-practices/rtt">Google: Make web faster</a>
+</section>
+-->
+<section class="slide" id="title-slide">
+	<h1>CSS Best Practice</h1>		
+</section>
+<section class="slide" id="title-slide">
+	<h1>Efficient CSS selectors</h1>	
+	<a href="http://css-tricks.com/the-difference-between-id-and-class/"> Difference betwee ID and Class</a>
+	<br/>
+	<a href="http://stackoverflow.com/questions/1230636/css-optimization-element-id-vs-class">CSS Optimization</a>
+<a href="http://www.youtube.com/watch?v=a2_6bGNZ7bA">Faster HTML and CSS</a>
+	<br/>
+	<a href="http://taligarsiel.com/Projects/howbrowserswork1.htm">How Browsers Work</a>	
+</section>
+<section class="slide" id="title-slide">
+	<h1>Unused CSS</h1>		
+		<a href="http://en.wikipedia.org/wiki/Comparison_of_layout_engines_(Cascading_Style_Sheets)">CSS Lyaout Engines</a>
+	<br/>
+	<a href="https://developers.google.com/speed/docs/best-practices/rendering">Google: optimize browser rendering</a>
+</section>
+<section class="slide" id="title-slide">
+	<h1>Cookie</h1>
+	<h3>Cookie Less static content in sub domain</h3>	
+	<a href="https://developers.google.com/speed/docs/best-practices/request#ServeFromCookielessDomain">ggl: cookieless domain</a>
+	<br/>
+	<br/>
+	<a href="http://yuiblog.com/blog/2007/03/01/performance-research-part-3/">Yahoo subdomain for static content</a>
+</section>
+<section class="slide" id="title-slide">
+	<img src="webSpeed/content.png"></img>
+	<h1>HTML</h1>		
+</section>
+<section class="slide" id="core-feature">
+	<h2>Reduceof DOM Elements</h2>
+	<img src="webSpeed/htmlTree.png"></img>
+	<a href="http://www.w3.org/wiki/Traversing_the_DOM"> W3.org Traversing DOM</a>
+	<br/>
+	<a href="http://stackoverflow.com/questions/2120953/best-ways-to-reduce-number-of-dom-elements">Ways to reduce DOM element</a>	
+</section>
+<section class="slide" id="core-feature">
+	<h2>Don't Touch DOM</h2>	
+	<a href="http://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-B63ED1A3">W3.org DocumentFragment</a>
+	<br/>
+	<a href="http://davidwalsh.name/documentfragment">JS DocumentFragment</a>
+	<a href="http://stackoverflow.com/questions/14291811/minimize-dom-access-inorder-to-have-a-more-responsive-page"> In order DOM Access</a>
+	<br/>	
+	<a href="http://developer.yahoo.com/performance/rules.html">YDN: developer best practice</a>
+</section>
+<section class="slide" id="title-slide">
+	<h1>Optional html tags</h1>		
+</section>
+<section class="slide" id="core-feature">
+	<h2>Ommit some closing tags</h2>
+	<div class="slide"><pre>&lt;p&gt;Some text
+&lt;p&gt;Some more text
+&lt;ul&gt;
+ &lt;li&gt;A list item
+ &lt;li&gt;Another list item
+&lt;/ul&gt;
+</pre>
+	</div>
+	<pre>&lt;p&gt;Some text&lt;/p&gt;
+&lt;p&gt;Some more text&lt;/p&gt;
+&lt;ul&gt;
+ &lt;li&gt;A list item&lt;/li&gt;
+ &lt;li&gt;Another list item&lt;/li&gt;
+&lt;/ul&gt;</pre>
+	<div class="slide">
+		<a href="http://www.w3.org/TR/REC-html40/index/elements.html">w3.org</a>
+	</div>
+	
+</section>
+<section class="slide" id="title-slide">
+	<h1>Speed Up JS (X)</h1>		
+</section>
+<section class="slide" id="title-slide">
+	<h1>One Last Thing !</h1>		
+</section>
+<section class="slide" id="title-slide">
+	<h1>gZip</h1>
+<a href="http://www.zbugs.com/">gbugs (tool)</a>	
+<br/>
+<a href="http://httpd.apache.org/docs/2.0/mod/mod_deflate.html">Apache Settings</a>
+</section>
+<section class="slide" id="core-feature">
+	<h2>gZip</h2>		
+	<img class="slide" src="webSpeed/gZip/withoutGzip.png"></img>
+	<img class="slide" src="webSpeed/gZip/withGzip.png"></img>
+	<a class=" refName" href="http://betterexplained.com/articles/how-to-optimize-your-site-with-gzip-compression/">G Zip: Better Explained</a>
+</section>
+<section class="slide" id="core-feature">		
+	<h2> How far you can compress</h2>
+	<img src="webSpeed/gZipBenefit.png">
+</section>
+<section class="slide" id="core-feature">		
+	<h2>How much you are getting</h2>
+	<img src="webSpeed/gZip/gZipBenefit.png">
+	<a href="http://www.die.net/musings/page_load_time/">Die.net Page Load Time</a>
+</section>
+<section class="slide" id="title-slide">
+	<h1>90/37 >=0.2 times</h1>
+</section>	
+<section class="slide" id="core-feature">		
+	<h3>Position:19.9 + 0.2 = 20.1 times</h3>
+	<img src="webSpeed/meter/meter201.jpg">
+</section>
+<section class="slide" id="title-slide">
+	<h1>Performance Trap</h1>		
+</section>
+<section class="slide" id="title-slide">
+	<h1>I am lost(?)</h1>		
+</section>
+<section class="slide" id="core-feature">
+	<h1>Webpage testing tools</h1>	
+	<br/>
+	<a href="https://developers.google.com/speed/"> Page speed</a>
+	<br/>
+	<a href="http://www.webpagetest.org/">Web page test</a>
+	<br/>
+	<a href="http://tools.pingdom.com/ping/"> Ping dom</a>
+	<br/>
+	<a href="http://loads.in/"> Loads In</a>
+	<br/>
+	<a href="http://www.uptrends.com/aspx/free-html-site-page-load-check-tool.aspx"> UpTrends.com</a>
+</section>
+<section class="slide" id="core-feature">
+	<h1>Need More (!!)</h1>	
+	<br/>
+	<a href="http://www.igvita.com/posa/high-performance-networking-in-google-chrome/"> Chrome Predictor and PreRender</a>
+	<br/>
+	<a href="https://developer.mozilla.org/en-US/docs/Link_prefetching_FAQ"> Mozilla PreFetch</a>
+	<br>
+	<a href="http://www.igvita.com/2013/01/15/faster-websites-crash-course-on-web-performance/">Web Performance Crash Course</a>
+	<br/>
+	<a href="http://chimera.labs.oreilly.com/books/1230000000545/index.html">Book: High Performance Browser Network</a>
+	<br/>
+	<a href="http://www.igvita.com/posa/high-performance-networking-in-google-chrome/">Automate Web Performance</a>
+	<br/>
+	<a href="https://developers.google.com/speed/pagespeed/mod">Mod PageSpeed</a>
+	<br/>
+	<a href="http://www.igvita.com/2012/09/12/web-fonts-performance-making-pretty-fast/"> Web font Performance</a>
+	<br/>
+	<a href="http://www.chromium.org/spdy/spdy-protocol/spdy-protocol-draft2"> SPDY protocol Draft</a>
+</section>
+<section class="slide" id="title-slide">
+	<img src="webSpeed/question.jpg"></img>
+</section>
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<!--
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+-->
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+
+<!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../scripts/jquery-1.8.3.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="deckScripts/deck.core.js"></script>
+<!--
+<script src="../extensions/hash/deck.hash.js"></script>
+<script src="../extensions/menu/deck.menu.js"></script>
+<script src="../extensions/goto/deck.goto.js"></script>
+<script src="../extensions/status/deck.status.js"></script>
+<script src="../extensions/navigation/deck.navigation.js"></script>
+<script src="../extensions/scale/deck.scale.js"></script>
+-->
+<!-- Initialize the deck -->
+<script>
+$(function() {
+	$.deck('.slide');
+});
+</script>
+
+</body>
+</html>
