@@ -1,0 +1,148 @@
+<html>
+<head>
+<title></title>
+<style>
+body{
+	font-family:'Helvetica Neue',Arial,Helvetica,FreeSans,'sans-serif';
+}
+.container{
+	border:5px solid gray;
+	width:500px;
+	height:400px;
+	border-top:0px;
+	position:relative;
+	border-bottom-right-radius:50px;
+	border-bottom-left-radius:50px;
+}
+.egg {
+	width: 150px;
+	height: 94px;
+	border-radius: 40% 60% 60% 40%/50%;	
+	box-shadow: 0px 0px 20px gray, 0px 0px 20px gray;
+}
+.egg{
+	float:left; 
+	margin: 3px; 
+	margin-left:10px; 
+	visibility:hidden; 
+	}
+.egg span {
+	display:none;
+	font-size:3em;
+	font-weight:bold;
+	color:#8FB5F2;
+	padding:60px 30px;
+}
+label{font-size:1.3em;}
+.block{float:left; margin:20px;}
+</style>
+</head>
+<body>
+<div class="container block">
+	<div id="10" class="egg"><span id="eggText10">Egg</span></div>
+	<div id="11" class="egg"><span id="eggText11">Egg</span></div>
+	<div id="12" class="egg"><span id="eggText12">Egg</span></div>
+	<div id="7"  class="egg"><span id="eggText7">Egg</span></div>
+	<div id="8"  class="egg"><span id="eggText8">Egg</span></div>
+	<div id="9"  class="egg"><span id="eggText9">Egg</span></div>
+	<div id="4"  class="egg"><span id="eggText4">Egg</span></div>
+	<div id="5"  class="egg"><span id="eggText5">Egg</span></div>
+	<div id="6"  class="egg"><span id="eggText6">Egg</span></div>
+	<div id="1"  class="egg"><span id="eggText1">Egg</span></div>
+	<div id="2"  class="egg"><span id="eggText2">Egg</span></div>
+	<div id="3"  class="egg"><span id="eggText3">Egg</span></div>
+</div>
+<div class="option">
+<input type="radio" id="throttle" name ="optionName" checked /><label for="throttle">Throttle</label>
+<input type="radio" id="debounce" name ="optionName"/><label for="debounce">Debounce</label>
+<br/>
+<br/>
+<button id="reset">Reset</button>
+</div>
+
+<div class="helpText block">
+<h2> Throttle and Debounce Demo (UnderScore)</h2>
+<p>click on the container to see something</p>
+
+<h4>Throttle</h4>
+<p> Name is throttled 1sec. The function will execute maximum one time in every second</p>
+<p>if you click quickly you will see throttle effect</p>
+
+<p>This mean, if you click 5times in a sec, only the first one will be throttled</p>
+
+<h4>Debounce</h4>
+<p>Refresh the page and click on debounce and then click inside container</p>
+<p> The shadow is debounced 1sec. </p>
+</p> The shadow will dispear after 1sec of your last click</p>
+</p>if you do another click before 1se of last click, debounce will not fired</p>
+<p>However, debounce will fire everytime you passed 1sec after your last click</p>
+
+
+</body>
+<script src="../scripts/jquery-1.8.3.js"></script>
+<script src="../scripts/underscore-min.js"></script>
+<script>
+var count = 0;
+	
+$('.container').on('click',function(){
+	addEgg();
+});
+$('#reset').on('click',function(){
+	
+	$('.egg').css('visibility','hidden');
+	$('.egg span').hide();
+	$('.egg').css('box-shadow','0px 0px 20px gray, 0px 0px 20px gray');
+	count=0;
+});
+$(document).keydown(function(e){
+	//when press left arrow key	
+	if (e.keyCode == 37) {	       
+		takeEgg();
+		return false;
+    }
+	//when press right arrow on keyboard
+	if (e.keyCode == 39) {       
+	   addEgg();
+       return false;
+    }
+});
+
+function addEgg(){
+	if(count <12){		
+		count=count+1;
+		$('#'+count).css('visibility','visible');
+	}
+	(isThrottle()) ? throttledEggName() : debouncedEggColor();
+}
+
+function takeEgg(){
+	if(count >0){
+		$('#'+count).css('visibility','hidden');
+		count=count-1;
+	   }
+}
+var doThrottle = _.once(isThrottle);
+
+function isThrottle(){
+	return $('#throttle').is(':checked');	
+}
+//throttle
+function showEggName(){
+	$('#eggText'+count).show();
+	console.log('throttled function called');	
+}
+var throttledEggName = _.throttle(showEggName, 1000);
+
+//debounce
+function setEggColor(){
+	var visibleEggs = _.filter($('.egg'),function(eg){
+							return $(eg).css('visibility')=='visible';
+						});
+	$(visibleEggs).css('box-shadow','0px 0px 20px #4b8df9, 0px 0px 20px #4b8df9');
+	
+	console.log('debounced function called');
+}
+var debouncedEggColor = _.debounce(setEggColor, 1000);
+
+</script>
+</html>

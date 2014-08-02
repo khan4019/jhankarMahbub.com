@@ -32,15 +32,15 @@ body{
 	-webkit-border-radius: 40% 60% 60% 40%/50%;
 	-moz-border-radius: 40% 60% 60% 40%/50%;
 	border-radius: 40% 60% 60% 40%/50%;
-	-webkit-box-shadow: 0px 0px 20px #4b8df9, 0px 0px 20px #4b8df9;
-	-moz-box-shadow: 0px 0px 20px #4b8df9, 0px 0px 20px #4b8df9;
-	box-shadow: 0px 0px 20px #4b8df9, 0px 0px 20px #4b8df9;	
+	-webkit-box-shadow: 0px 0px 20px #D5D3D3, 0px 0px 20px #D5D3D3;
+	-moz-box-shadow: 0px 0px 20px #D5D3D3, 0px 0px 20px #D5D3D3;
+	box-shadow: 0px 0px 20px #D5D3D3, 0px 0px 20px #D5D3D3;
 }
 .mainName{
-	font-size:3em;
-	font-weight:bold;
-	color:#8FB5F2;
-	padding:60px 15px;	
+	font-size: 2.5em;
+	font-weight: bold;
+	color: #8FB5F2;
+	padding: 50px 45px;	
 }
 .loginSection{
 	display: none;
@@ -206,7 +206,7 @@ footer a{
 	-moz-box-shadow: 0px 0px 20px #D5D3D3, 0px 0px 20px #D5D3D3;
 	box-shadow: 0px 0px 20px #D5D3D3, 0px 0px 20px #D5D3D3;
 }
-.verti-egg:hover{
+.verti-egg:hover, .horiz-egg:hover{
 	-webkit-box-shadow: 0px 0px 20px #4b8df9, 0px 0px 20px #4b8df9;
 	-moz-box-shadow: 0px 0px 20px #4b8df9, 0px 0px 20px #4b8df9;
 	box-shadow: 0px 0px 20px #4b8df9, 0px 0px 20px #4b8df9;	
@@ -227,12 +227,12 @@ footer a{
 <body>
 	<div class="pageBanner">
 		<div class="pageHeader">
-			<h1> Register Basic Website Competition</h1>
+			<h1> Jhankar Mahbub dot com</h1>
 		</div>	
-		<h3> Win Great Prizes and serve Bangladesh</h3>
+		<h3> Things not happenig here</h3>
 	</div>	
-	<div class="horiz-egg">
-		<p class="mainName">আমরাই পারি</p>
+	<div id="dreamJob" class="horiz-egg" title="Click to land your dream job">
+		<p class="mainName">Land your Dream job</p>
 	</div>
 	<div class="loginSection">	
 		<div class="stepHeader" data-bind="visible:stepNumber()<6">
@@ -331,6 +331,10 @@ footer a{
 				window.location.href = "presentations/default.html";	
 			});	
 			
+			$('#dreamJob').on('click', function(){
+				window.location.href = "dreamJob/index.html";
+			})
+
 			hideRegistration();
 		});	
 		
