@@ -47,6 +47,7 @@ body{
 
 .eggBucket{
 	margin:50px 0 0 100px;
+	clear: both;
 }
 .eggBucket div{
 	float:left;
@@ -65,18 +66,38 @@ body{
 	-moz-box-shadow: 0px 0px 20px #D5D3D3, 0px 0px 20px #D5D3D3;
 	box-shadow: 0px 0px 20px #D5D3D3, 0px 0px 20px #D5D3D3;
 }
-.verti-egg:hover, .horiz-egg:hover{
+.round-box {
+	width: 125px;
+	height: 50px;
+	margin: 20px auto 30px;
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+
+	-webkit-box-shadow: 0px 0px 20px #D5D3D3, 0px 0px 20px #D5D3D3;
+	-moz-box-shadow: 0px 0px 20px #D5D3D3, 0px 0px 20px #D5D3D3;
+	box-shadow: 0px 0px 20px #D5D3D3, 0px 0px 20px #D5D3D3;
+}
+.verti-egg:hover, .horiz-egg:hover, .round-box:hover{
 	-webkit-box-shadow: 0px 0px 20px #4b8df9, 0px 0px 20px #4b8df9;
 	-moz-box-shadow: 0px 0px 20px #4b8df9, 0px 0px 20px #4b8df9;
 	box-shadow: 0px 0px 20px #4b8df9, 0px 0px 20px #4b8df9;	
 }
 
-.eggBucket .menuText{	
+.verti-egg .menuText{	
 	font-size:1.7em;
 	font-weight:bold;
 	color:#4b8df9;
 	text-align:center;
 	margin-top:90px;
+}
+.round-box .menuText{	
+	font-size:1.7em;
+	font-weight:bold;
+	color:#4b8df9;
+	text-align:center;
+	margin-top:10px;
 }
 .verti-egg:hover p{
 	display:block;
@@ -109,6 +130,20 @@ body{
 		<div id="funLink" class="verti-egg">
 			<p class="menuText">Fun</p>
 		</div>
+	</div>
+	<div class="eggBucket">
+		<div id="tips" class="round-box">
+			<p class="menuText">tips</p>
+		</div>
+		<div id="america" class="round-box">
+			<p class="menuText">america</p>
+		</div>
+		<div id="guru" class="round-box">
+			<p class="menuText">Guru</p>
+		</div>
+		<div id="jkr" class="round-box">
+			<p class="menuText">Jhankar</p>
+		</div>
 	<div>
 	<script src="scripts/jquery-1.8.3.js"></script>
 	<script>
@@ -132,6 +167,18 @@ body{
 
 			$('#dreamJob').on('click', function(){
 				window.location.href = "dreamJob";
+			});
+			$('#jkr').on('click', function(){
+				window.location.href = "jkr";
+			});
+			$('#guru').on('click', function(){
+				window.location.href = "guru/derek.html";
+			});
+			$('#america').on('click', function(){
+				window.location.href = "america";
+			});
+			$('#tips').on('click', function(){
+				window.location.href = "tips";
 			});
 		});
 	</script>
