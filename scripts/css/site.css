@@ -4,10 +4,15 @@
 .sectionContainer img{height: 250px; border: 5px solid gray; border-radius: 10px; padding: 10px;}
 
 
+.empty-bar{
+  height: 70px;
+}
+
 /*start of navigation*/
 nav {
   z-index: 99999;
   width: 100%;
+  border-bottom: 1px solid #df691a;
 }
 nav .block {
   background: #fff;
@@ -87,6 +92,25 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 
 /* end of navigation */
 
+
+@media (min-width: 768px)
+{
+    .navbar-header
+    {
+        float: none;
+    }
+
+    .navbar-toggle
+    {
+        display: block;
+    }
+
+    .navbar-collapse.collapse
+    {
+        display: none !important;
+    }
+}
+
 /* utility styles */
 .center-block {
     display: block;
@@ -138,7 +162,6 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     line-height: 1.3;
     margin: 0 auto;
     padding: 0 5px;
-    max-width: 700px;
   }
   .section-description .right{
     padding-left: 50px;
