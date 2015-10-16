@@ -93,24 +93,6 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 /* end of navigation */
 
 
-@media (min-width: 768px)
-{
-    .navbar-header
-    {
-        float: none;
-    }
-
-    .navbar-toggle
-    {
-        display: block;
-    }
-
-    .navbar-collapse.collapse
-    {
-        display: none !important;
-    }
-}
-
 /* utility styles */
 .center-block {
     display: block;
@@ -140,6 +122,10 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 
  .section-basic-web{
   background: rgba(236, 228, 239, 0.6);
+ }
+
+ .section-struggle{
+  background: rgba(185, 200, 197, 0.33);
  }
 
  .section-footer{
