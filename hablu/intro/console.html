@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" manifest="jsconsole.appcache">
+<head>
+	<!-- all most all the code is taken from jsconsole.com -->
+	<meta charset="utf-8" />
+	<title>JavaScript Console</title>
+	<meta id="meta" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+	<link rel="icon" href="../../images/faviconRun.png" type="image/png">
+	<link rel="stylesheet" href="../../scripts/css/console.css" />
+	<link rel="stylesheet" type="text/css" href="../../scripts/css/bootstrap-readable.min.css">
+</head>
+<body>
+<form>
+  <textarea autofocus id="exec" spellcheck="false" autocapitalize="off" rows="1" autocorrect="off"></textarea>
+</form>
+<button type="button" id="btn-run" class="btn btn-success btn-sm" aria-label="Left Align">
+  <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+  Run
+</button>
+<div id="console">
+	<ul id="output"></ul>
+</div>
+<script src="../../scripts/js/prettify.packed.js"></script>
+<script src="../../scripts/js/EventSource.js"></script>
+<script src="../../scripts/js/console.js"></script>
+
+</body>
+</html>
