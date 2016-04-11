@@ -109,7 +109,8 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 
 /* section style */
   section{
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 30px;
     border-radius: 30px;
   }
@@ -144,16 +145,26 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 
   .section-description .left{
     color: #7B5B5B;
-    font-size: 25px;
+    font-size: 18px;
     line-height: 1.3;
     margin: 0 auto;
     padding: 0 5px;
   }
   .section-description .right{
-    padding-left: 50px;
+    padding-left: 20px;
   }
 
   .section-description ol li{
     list-style: none;
     font-size: 22px;
+  }
+  .title-second-line{
+    margin-top: -12px;
+  }
+  .piece-quater{
+    border: 2px solid #E6E6E6;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
   }
