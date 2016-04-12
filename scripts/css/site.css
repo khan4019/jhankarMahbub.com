@@ -166,7 +166,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     padding-bottom: 10px;
   }
 
-  @media (max-width:960px){
+  @media (max-width:992px){
     .piece-quater{
       margin-bottom: 20px;
     }
