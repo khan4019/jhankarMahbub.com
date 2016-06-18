@@ -44,7 +44,7 @@
   1. Select “JhankarMahbub.com”
   1. At top (in the middle) you will see “master”
   1. Click on master, you will see a drop down menu
-  1. Select “khan4019/develop”
+  1. Select “develop”
 
 11. Got to Sublime text
   1. Expand “JhankarMahbub.com” on the left hand side menu
@@ -63,5 +63,11 @@
   1. In the summary box below write “First commit from your name”
   1. In the description section, write some description 
 
+13. This is only for the first time. 
+  1. Click on the icon (two branch) left side of the develop (where you selected develop from master before)
+  2. You are going to create your own branch
+  3. give it a name like "develop/your-name and Task" (in place of your name after / give your name). For example "develop/jhankar- guru pages"
+  4. Below the name you will see **From branch** select develop
+  5. Click on **Create new branch**
 13. On Git for Windows
   1. On the right side, click on “Sync”
