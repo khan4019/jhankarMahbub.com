@@ -66,8 +66,18 @@
 13. This is only for the first time. 
   1. Click on the icon (two branch) left side of the develop (where you selected develop from master before)
   2. You are going to create your own branch
-  3. give it a name like "develop/your-name and Task" (in place of your name after / give your name). For example "develop/jhankar- guru pages"
+  3. give it a name like "your-name and Task" (in place of your name write your name). For example "jhankar guru pages"
   4. Below the name you will see **From branch** select develop
   5. Click on **Create new branch**
 13. On Git for Windows
-  1. On the right side, click on “Sync”
+  1. Frist time you will see "Publish". This is only for the first time when you create a new branch
+  2. Click publish button
+3. In future, in place of publish, you will see **Sync**
+  4.  after making some changes or adding new page you will click on sync
+  5.  When you are done creating a new web page and associated link
+  6.  commit changes and press on the **Sync** button on the right hand side
+7.  After finishing a chunk of work which is ready to publish to the main website
+  8.  click on the "Pull Request", on the top right hand side
+  9.  Before sending the Pull request make sure you change from "your branch" into "develop"
+  10. And then click on "Send Pull Request" button at the bottom
+11. You are done
