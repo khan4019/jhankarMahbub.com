@@ -166,25 +166,45 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     padding-bottom: 10px;
   }
   
+  .page-block{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E6E6E6;
+  }
+
+  .writing-piece{
+    margin-bottom: 10px;
+  }
+
   .left-side-section{
     margin-top: 20px;
     border-left: 1px solid #E6E6E6;
   }
 
   .left-side-section .side-series{
-    padding-bottom: 20px;
-    padding-top: 20px;
-    border-bottom: 2px solid #E6E6E6;
-    
+    padding: 0 15px;
+  }
+
+  .side-series .section-description{
+    font-size: 14px;
+    margin-bottom: 5px;
   }
 
   .side-series ol li{
     list-style: none;
   }
-
-  .btn-round-noMargin{
+  .side-series .page-link{
+    font-size: 12px;
+    line-height: 10px;
+  }
+  .side-series .page-link-collection{
+    margin-left: 10px;
+    border-bottom: 2px solid #E6E6E6;
+  }
+  .btn-side-series{
     border-radius: 25px;
-    padding: 4px 30px;
+    background-color: #e6e6e6;
+    padding: 0px 20px;
+    font-size: 11px;
   }
 
   @media (max-width:992px){
