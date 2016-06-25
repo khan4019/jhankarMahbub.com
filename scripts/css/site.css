@@ -187,6 +187,10 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     margin-bottom: 10px;
   }
 
+  .read-more{
+    margin-bottom: 40px;
+  }
+
   .left-side-section{
     margin-top: 50px;
     border-left: 1px solid #E6E6E6;
@@ -194,6 +198,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 
   .left-side-section .side-series{
     padding: 0 15px;
+    margin-top: 20px;
   }
 
   .side-series .section-description{
@@ -204,12 +209,15 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   .side-series ol li{
     list-style: none;
   }
+
+
   .side-series .page-link{
     font-size: 12px;
     line-height: 10px;
   }
   .side-series .page-link-collection{
     margin-left: 10px;
+    padding-bottom: 15px;
     border-bottom: 2px solid #E6E6E6;
   }
   .btn-side-series{
