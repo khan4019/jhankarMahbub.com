@@ -200,8 +200,9 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     margin-left: 10px;
     border-bottom: 2px solid #E6E6E6;
   }
-  .btn-round-noMargin{
+  .btn-side-series{
     border-radius: 25px;
+    background-color: #e6e6e6;
     padding: 0px 20px;
     font-size: 11px;
   }
