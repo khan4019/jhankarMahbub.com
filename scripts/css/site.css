@@ -179,7 +179,8 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   }
 
   .writing-block{
-    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-top: 20px;
   }
 
   .writing-piece{
@@ -187,7 +188,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   }
 
   .left-side-section{
-    margin-top: 20px;
+    margin-top: 50px;
     border-left: 1px solid #E6E6E6;
   }
 
