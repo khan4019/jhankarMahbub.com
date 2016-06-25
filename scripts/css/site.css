@@ -171,6 +171,17 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     border-bottom: 1px solid #E6E6E6;
   }
 
+  .latest-writings{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #E6E6E6;
+    /*background: rgba(236, 228, 239, 0.6);*/
+  }
+
+  .writing-block{
+    padding-top: 30px;
+  }
+
   .writing-piece{
     margin-bottom: 10px;
   }
