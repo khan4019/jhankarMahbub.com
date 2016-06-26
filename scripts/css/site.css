@@ -1,8 +1,8 @@
-.sectionContainer{margin: 30px;}
+.sectionContainer{margin-bottom: 15px;}
 .sectionHeader{ text-decoration: underline;}
-.sectionContainer p{ margin-bottom: 15px;}
+.sectionContainer p{ margin-bottom: 20px;}
 .sectionContainer img{height: 250px; border: 5px solid gray; border-radius: 10px; padding: 10px;}
-
+.single-page section{margin: 0 10px;}
 
 .empty-bar{
   height: 70px;
@@ -225,6 +225,12 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     background-color: #e6e6e6;
     padding: 0px 20px;
     font-size: 11px;
+  }
+
+  @media (min-width: 768px){
+    .jumbotron{
+      margin-top: 60px;
+    }
   }
 
   @media (max-width:992px){
