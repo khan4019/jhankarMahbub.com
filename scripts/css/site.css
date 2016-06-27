@@ -187,6 +187,13 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     margin-bottom: 10px;
   }
 
+  .writing-piece .title a{
+    color: #333333;
+  }
+  
+  .writing-piece .title a:hover{
+    color: #4582ec;
+  }
   .read-more{
     margin-bottom: 40px;
   }
