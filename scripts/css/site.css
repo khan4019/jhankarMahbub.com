@@ -2,6 +2,14 @@
 .sectionHeader{ text-decoration: underline;}
 .sectionContainer p{ margin-bottom: 20px;}
 .sectionContainer img{height: 250px; border: 5px solid gray; border-radius: 10px; padding: 10px;}
+
+.largeImage img {
+  height: 550px; 
+  border: 5px solid gray; 
+  border-radius: 10px; 
+  padding: 10px;
+}
+
 .single-page section{margin: 0 10px;}
 
 .empty-bar{
@@ -187,6 +195,13 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     margin-bottom: 10px;
   }
 
+  .writing-piece .title a{
+    color: #333333;
+  }
+  
+  .writing-piece .title a:hover{
+    color: #4582ec;
+  }
   .read-more{
     margin-bottom: 40px;
   }
