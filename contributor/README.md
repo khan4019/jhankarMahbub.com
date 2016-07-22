@@ -64,7 +64,7 @@
   1. In the description section, write some description 
 
 13. This is only for the first time. 
-  1. Click on the icon (two branch) left side of the develop (where you selected develop from master before)
+  1. Click on the icon (two branch: <img src="http://downloadicons.net/sites/default/files/code-fork-icon-64988.png" align="left" height="16" width="16">) left side of the develop (where you selected develop from master before)
   2. You are going to create your own branch
   3. give it a name like "your-name and Task" (in place of your name write your name). For example "jhankar guru pages"
   4. Below the name you will see **From branch** select develop
