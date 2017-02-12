@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="inspiration" content="The shortest path for ফাঁকিবাজ">
+		<meta name="description" content="ফেইসবুকের কমেন্ট থেকে লটারির মাধ্যমে ২৫ জনক সিলেক্ট করার প্রোগ্রাম">
+	<title>ফেইসবুক কমেন্ট লটারি</title>
+	<link href="../../scripts/css/site.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../scripts/css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="../../images/favicon.png" />
+</head>
+<body>
+	<nav id="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <nav class="navbar navbar-default navbar-fixed-top">
+                          <div class="container-fluid">
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                                  <a class="navbar-brand center-block" href="../../">
+                                    <img src="../../images/logo.png" height="50" width="167" alt="">
+                                  </a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                              <ul class="nav navbar-nav navbar-right" id="top-nav">
+                                <li class=""><a href="../../">Home</a></li>
+                                <li class=""><a href="../../hablu/intro/index.html">Hablu</a></li>
+																<li class="active"><a href="index.html">Bolod</a></li>
+                                <li class=""><a href="../../web/basic/index.html">Web</a></li>
+                                <li class=""><a href="../../dreamJob/">dream job</a></li>
+                                <li class=""><a href="../../motivate/">Motivation</a></li>
+                                <li><a href="../../guru/">Guru</a></li>
+                                <li class=""><a href="../../tips/">Tips</a></li>
+                                <li class=""><a href="../../jkr/">About me</a></li>
+                              </ul>
+                            </div><!-- /.navbar-collapse -->
+                          </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                </div><!-- .col-md-12 close -->
+            </div><!-- .row close -->
+        </div><!-- .container close -->
+	</nav>
+	<div class="jumbotron">
+      <div class="container">
+        <h2>ফেইসবুক কমেন্ট লটারি</h2>
+        <p>The shortest path for ফাঁকিবাজ</p>
+      </div>
+    </div>
+	<div class="container">
+		<h4> <a href="index.html">বলদ টু বস</a></h4>
+		<div class="row ">
+			<section class="sectionContainer">
+				<p>ফেইসবুকের পোস্টে কারা কারা কমেন্ট করছে সেটা বের করার দুইটা উপায় আছে। একটা হচ্ছে facebook graph api। আরেকটা হচ্ছে ব্রাউজার, html, css, javascript দিয়ে। যেহেতু html, css, javascript দিয়ে বুঝানো সহজ তাই সেটা দিয়ে এই লটারিটা করা হয়েছে।</p>
+			</section>
+			<section class="sectionContainer">
+				<p>১. ফেইসবুকের পোষ্টটা নতুন ট্যাবে ওপেন করে সব কমেন্ট ওপেন করছি। তবে কমেন্ট ওপেন/expand করলেও, কমেন্টের রিপ্লাই ওপেন/expand করা যাবে না। তাহলে রিপ্লাই যারা দিছে তাদের নামও চলে আসবে।</p>
+				<p>২. তারপর F12 চাপ দিয়ে, ডেভেলপার টুল ওপেন করে Console ট্যাবে গিয়ে সব কমেন্টের নাম এবং প্রোফাইল লিংক জোগাড় করছি। </p>
+				<p>৩. আমি যেহেতু আমার প্রোফাইল এবং পেইজ দুই জায়গাতেই কমেন্ট করার কথা বলেছি, সেহেতু দুই পোষ্টের সব কমেন্ট এক জায়গায় করছি। </p>
+				<p>৪. তারপর চাল্লু পোলাপান, যারা একই পোস্টে একাধিকবার বা দুই পোস্টে দুইবার কমেন্ট করছে। তাদের নাম একবার রেখে ডুপ্লিকেট কমেন্ট সরিয়ে দিছি। যাতে সবার নাম আসার সমান চান্স থাকে। </p>
+				<p>৫. তারপর randam নাম্বার জেনারেট করে একজনকে সিলেক্ট করেছি। যার নাম সিলেক্ট করা হয়েছে তাকে সরিয়ে দেয়া হয়েছে।   যাতে একইনাম দুইবার না উঠে যায়। </p>
+				<p>৬. এইভাবে ২৫জনকে সিলেক্ট করা হয়েছে। </p>
+			</section>
+			<section class="sectionContainer">
+				<p><strong>লটারি করার কোডিং</strong></p>
+				<p>নিচের কোড একটু এডভান্স লেভেলের, যাদের প্রোগ্রামিং সম্পর্কে ধারণা কম বা মোটামুটি তাদের এই কোড বুঝতে সমস্যা হবে। তবে হাবলুদের জন্য প্রোগ্রামিং এবং প্রোগ্রামিংয়ের বলদ টু বস বইটা পড়লে বেশিরভাগ জিনিস ধরে ফেলতে পারবে। (চান্সে মার্কেটিং করে ফেললাম)</p>
+				<p>ফেইসবুকের সব কমেন্টের শুরুর লাইনে সবার নাম থাকে। সেই নামে ক্লিক করলে তার প্রোফাইলে চলে যায়। তারমানে যে কমেন্ট করেছে তার নামের জায়গায় নাম এবং প্রোফাইলের লিংক থাকে। আর নাম এর কালার, সেটার সাইজ ঠিক করার জন্য নামের সাথে css ক্লাস থাকে। সেই ক্লাসের নাম হচ্ছে UFICommentActorName । এখন আমাদের টার্গেট হচ্ছে এই ক্লাস নাম ওয়ালা যত উপাদান(element) আছে, সবগুলা খুঁজে বের করা। তাইলেই সব কমেন্ট আমি পেয়ে যাবো।  </p>
+				<p>কমেন্ট খোঁজার এই সিস্টেম গুগল ক্রমে অলরেডি দেয়া আছে। জাস্ট গুগল ক্রোমে F১২ চাপ দিলে নিচে বা সাইডে যে জিনিসটা ওপেন হয় সেটার Element নামক ট্যাবে গেলে, Ctrl+F চাপ দিয়ে ক্লাসের নাম লিখে enter চাপ দিলেই একটা একটা করে আসতে থাকবে।। তবে এইভাবে একটা একটা করে খোঁজা খুবই সময় সাপেক্ষ ব্যাপার। তাই আরেকটু অটোমেটিক করা লাগবে জিনিসটাকে। </p>
+				<p>আর সবগুলা কমেন্ট দেখার জন্য, নিচে বা সাইডে যে জিনিসটা ওপেন হইছে সেটার console ট্যাবে গিয়ে নিচের কোড  বা কপি পেষ্ট করেে enter চাপ দিলেই সবার নাম, প্রোফাইলের লিংক দেখায় দিবে। । </p>
+				<pre><code>
+var allCommenters = document.getElementsByClassName('UFICommentActorName');
+
+for(var i = 0; i< allCommenters.length; i++){
+  var profileLink = allCommenters[i];
+  var name = profileLink.text;
+  var profile = profileLink.href;
+  console.log(name, profile);
+}
+				</code></pre>
+				<p>উপরের কোডের প্রথম লাইনের ডান পাশে গিয়ে, ওয়েব পেইজ(document) এর getElementByClassName লেখা আছে। তারমানে ক্লাসের নাম দিয়ে element বা উপাদান বের করা হচ্ছে। আর ক্লাসের নামতো আগেই জানস UFICommentActorName। তাই সেটা ব্র্যাকেটের ভিতরে দিয়ে দিলি। আর এইখান থেকে যেসব মান পাওয়া যাবে, সেগুলা allCommmenter (সব কমেন্টকারী) নামক array তে রাখা হইছে। </p>
+				<p>তারপর একটা for লুপ চালানো হইছে। হাবলুদের জন্য প্রোগ্রামিং যারা পড়ছে তারা for লুপ না বুঝলে চটকনা খাবি। লুপের ভিতরে profileLink নামে একটা ভেরিয়েবল ডিক্লেয়ার করা হইছে তারপর profileLink থেকে text আর href বের করে সেদুইটা যথাক্রমে name এবং profile ভেরিয়েবলে রাখা হইছে। সবার লাষ্টে name এবং profile ভেরিয়েবলকে console.log লিখে আউটপুট হিসেবে দেখানো হইছে। </p>
+				<p>তবে শুধু নাম, আর লিংক দেখলেই আমার কাজ হবে না। আমার লটারিও করা লাগবে। সেজন্য আমি participants নামে একটা array ডিক্লেয়ার করছিলাম। তারপর  for লুপের ভিতরে profile কে সেই array এর মধ্যে push করে দিছিলাম নিচের মতো করে। </p>
+				<pre><code>
+var participants = [];
+
+var allCommenters = document.getElementsByClassName('UFICommentActorName');
+
+for(var i = 0; i< allCommenters.length; i++){
+  var profileLink = allCommenters[i];
+  var name = profileLink.text;
+  var profile = profileLink.href;
+  participants.push(profile);
+}
+				</code></pre>
+				<p>সব প্রোফাইল participants array তে চলে আসার পরে কাজ হচ্ছে অতিচালাল পোলাপান, যারা দুইটা বা তার বেশি কমেন্ট করছে তাদের এক্সট্রা নামগুলো সরিয়ে ফেলা। যাতে তাদের নাম উঠার চান্স বেড়ে না যায়। </p>
+				<p>সেটা করার জন্য নিচের মতো করে, uniqueProfiles নামে একটা array ডিক্লেয়ার করছি। তারপর একটা আরেকটা for লুপ চালিয়ে  সেই লুপের মধ্যে একটা একটা করে প্রোফাইল লিংক নিয়ে সেটাকে commenter নামক ভেরিয়েবলে রাখছি। তারপর দেখছি সেই প্রোফাইলের নাম অলরেডি uniqueProfiles নামক array তে আছে কিনা। সেটা indexOf দিয়ে চেক করলেই বুঝা যায়। যদি আগে থেকে থাকে, তাহলে indexOf এর মান হবে সেই পজিশনের মান। আর যদি না থাকে। তাহলে indexOf এর মান হবে -1 </p>
+				<p>তাই নিচে একটা if লিখে শর্ত দিয়ে চেক করছে position ভেরিয়েবলের মান -১ কিনা। আর -১ হলে, নিশ্চিত যে সে এই পোস্টে তার আগে কমেন্ট করে নাই।  তাই তাকে নিশ্চিন্ত মনে uniqueProfiles array তে পুশ করা হয়েছে। </p>
+				<pre><code>
+var uniqueProfiles = [];
+for(var i = 0; i< participants.length; i++){
+  var commenter = participants[i];
+  var position = uniqueProfiles.indexOf(commenter);
+  if(position == -1){
+    uniqueProfiles.push(commenter);
+  }
+}
+				</code></pre>
+				<p>এখন কাজ হচ্ছে লটারি করা। সেটা সিম্পল করে দেখিয়ে দিচ্ছি। </p>
+
+				<p>সেটা করার জন্য প্রথমেই numberOfWinner নামে একটা ভেরিয়েবল ডিক্লেয়ার করা হইছে। আমি যেহেতু ২৫ জনকে সিলেক্ট করতে চাচ্ছি। তাই আমার এই ভেরিয়েবলের মান হচ্ছে 25</p>
+				<p>আর যেহেতু ২৫ জনকে সিলেক্ট করা হবে। তাই আরেকটা for লুপ বসায় দিছি। যেটার ভিতরের লটারির জন্য একটা random সংখ্যা ঠিক করা হবে</p>
+				<p>লটারি মানে কি? অনেকজনের মধ্য থেকে একজনকে বাছাই করা। আমিতো আর কাগজে লিখে সেই কাগজ উঠাতে পারবো না। তাই কোডিংয়ে একটা জিনিস আছে। যেটাকে বলে random সংখ্যা। এই random সংখ্যার কাজ হচ্ছে, ০ এবং ১ এর মধ্যে একবার এক সংখ্যা দিবে। তার ইচ্ছে মতো কোন ঠিক ঠিকানা নাই। </p>
+				<p>বিশ্বাস না হলে, ব্রাউজারের console ট্যাবে গিয়ে Math.random() লিখে enter  এ চাপ দে। দেখবি একবার এক সংখ্যা দেখাচ্ছে। এইটা দিয়েই লটারি করা হবে। তবে লটারি করতে গেলে হালকা ঝামেলা আছে।  </p>
+				<p>যাদের লটারি করা হবে, তাদের নাম একটা uniqueProfiles নামক array এর মধ্যে আগে থেকেই রাখা আছে। এখন কাজ হচ্ছে random সংখ্যা দিয়ে সেই array এর পজিশন রান্ডমলি বের করা। তবে রান্ডমলি বের করতে গেলে সমস্যা হচ্ছে, Math.random() যে আউটপুট দেয় সেটা হচ্ছে ০ থেকে ১ এর মধ্যে। তবে Math.random() যে সংখ্যাটা দেয় সেটার সাথে ১০০ দিয়ে গুন করলে সংখ্যাটা ০ থেকে ১০০ এর মধ্যে হয়ে যাবে। বিশ্বাস না হলে console এ গিয়ে Math.random()*১০০ লিখে enter এ চাপ দে। দুই তিনবার লিখে দেখ, একবার এক সংখ্যা দেখাচ্ছে। </p>
+				<p>তবে আমাদের টার্গেট হচ্ছে uniqueProfiles নামক array তে যত উপাদান আছে তাদের মধ্যে random সংখ্যা বের করা। তাই Math.random() কে uniqueProfiles নামক array এর উপাদান সংখ্যা দিয়ে গুন করছি। তারপর সেইগুনফলকে winningNumber নামক ভেরিয়েবলে রাখছি। </p>
+				<p>তবে winningNumber কোনো পূর্ন সংখ্যা না। কিন্তু array এর কোন উপাদানের পজিশন পূর্ন সংখ্যা। সেজন্য Math.round ফাংশনকে কল করে winningNumber প্যারামিটার হিসেবে দিয়ে দিলে, সেটা পূর্ন সংখ্যা হয়ে যাবে। সেটাকে winnerPosition ভেরিয়েবলে রাখা হইছে। </p>
+				<p>এখন uniqueProfiles নামক array এর থেকে winningPosition এর উপাদান বের করলেই, সে হবে winner
+				তারপর winner কে আউটপুট হিসেবে দেখানো হয়েছে। </p>
+				<p></p>
+				<pre><code>
+var numberOfWinner = 25;
+for(var i = 0; i< numberOfWinner; i++){
+  var randomNumber = Math.random();
+  var winningNumber = randomNumber * uniqueProfiles.length;
+  var winnerPosition = Math.round(winningNumber);
+  var winnerProfile = uniqueProfiles[winnerPosition];
+  console.log(winnerProfile);
+}
+				</code></pre>
+				<p>এখন পুরা কোডটা একসাথে দেখতে চাইলে নিচের মতো করে দেখাবে। </p>
+				<p>তুই চাইলে কোন একটা ট্যাবে একটা পোস্ট খুলে, গুগল ক্রোমে F১২ চাপ দিয়ে console ট্যাবে গিয়ে নিচের কোড কপি পেস্ট করতে পারস। তাহলে সেখান থেকে winner ঠিক করে দিবে। </p>
+				<pre><code>
+var numberOfWinner = 25;
+var participants = [];
+
+
+var allCommenters = document.getElementsByClassName('UFICommentActorName');
+
+for(var i = 0; i< allCommenters.length; i++){
+  var link = allCommenters[i];
+  var profileLink = link.href.split('?')[0];
+  participants.push(profileLink);
+}
+
+
+var uniqueProfiles = [];
+for(var i = 0; i< participants.length; i++){
+  var commenter = participants[i];
+  var position = uniqueProfiles.indexOf(commenter);
+  if(position == -1){
+    uniqueProfiles.push(commenter);
+  }
+}
+
+
+for(var i = 0; i< numberOfWinner; i++){
+  var randomNumber = Math.random();
+  var winningNumber = randomNumber * uniqueProfiles.length;
+  var winnerPosition = Math.round(winningNumber);
+  var winnerProfile = uniqueProfiles[winnerPosition];
+  console.log(winnerProfile);
+  var position = uniqueProfiles.indexOf(winnerProfile);
+  uniqueProfiles.splice( position, 1 );
+}
+				</code></pre>
+			</section>
+
+
+		</div>
+
+		<hr>
+		<div class="hide">
+          <h4>FB post</h4>
+			<div class="fb-post" data-href="https://www.facebook.com/JhankarMahbub/posts/10153151874971891" data-width="466"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/JhankarMahbub/posts/10153151874971891">Post</a> by <a href="https://www.facebook.com/JhankarMahbub">Jhankar Mahbub</a>.</div></div>
+        </div>
+		<hr>
+		<div>
+			<div class="fb-like" data-href="http://jhankarmahbub.com/bolod/intro/lottery.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+			<hr>
+			<div class="fb-comments" data-href="http://jhankarmahbub.com/bolod/intro/lottery.html" data-width="640" data-numposts="5" data-colorscheme="light"></div>
+			<hr>
+		</div>
+		<div>
+			<h3><strong>Question or Feedback:</strong></h3>
+			<p style="font-size: 1.2em;">যদি লোকসম্মুখে প্রশ্ন জিগ্গেস করতে বা উপদেশ, বকাঝকা, গালাগালি, হুমকি দিতে সংকোচ লাগে তাইলে ইমেইল করে  দেন  <a href="mailto:jhankar.mahbub@gmail.com">jhankar.mahbub@gmail.com</a></p>
+			<hr>
+		</div>
+	</div>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-40601505-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+</body>
+</html>
