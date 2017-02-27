@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How to write a very basic program or function. Learn how programmer selects something from differetnt alternatives">
+    <meta name="Programming for Hablu" content="">
+	<title>মামা ভেরিয়েবল কারে কয়</title>
+	<link href="../../scripts/css/site.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../scripts/css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="../../images/favicon.png" />
+</head>
+<body>
+	<nav id="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <nav class="navbar navbar-default navbar-fixed-top">
+                          <div class="container-fluid">
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                                  <a class="navbar-brand center-block" href="../../">
+                                    <img src="../../images/logo.png" height="50" width="167" alt="">
+                                  </a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                              <ul class="nav navbar-nav navbar-right" id="top-nav">
+                                <li class=""><a href="../../">Home</a></li>
+                                <li class="active"><a href="index.html">Programming</a></li>
+                                <li class=""><a href="../../web/basic/">Web</a></li>
+                                <li class=""><a href="../../motivate/">Motivational</a></li>
+                                <li><a href="../../guru/">Guru</a></li>
+                                <li class=""><a href="../../tips/">Tips</a></li>
+                                <li class=""><a href="../../america/">America</a></li>
+                                <li class=""><a href="../../jkr/">about me</a></li>
+                              </ul>
+                            </div><!-- /.navbar-collapse -->
+                          </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                </div><!-- .col-md-12 close -->
+            </div><!-- .row close -->
+        </div><!-- .container close -->
+	</nav>
+	<div class="jumbotron">
+      <div class="container">
+        <h2>মামা ভেরিয়েবল কারে কয়</h2>
+        <p>Anyone can Program</p>
+      </div>
+    </div>
+	<div class="container">
+		<h4> <a href="index.html">হাবলুদের জন্য প্রোগ্রামিং</a></h4>
+		<div class="row ">
+			<section class="sectionContainer">
+				<h4 class="sectionHeader"><strong>আধা-কেজি চালের দাম:</strong></h4>
+				<p><a href="chapter-2-variable.pdf" download>পিডিএফ ডাউনলোড</a></p>
+				<p>
+দোকানে গিয়ে আধা কেজি চালের দাম জিজ্ঞেস করলে দোকানদার বলবে- চালের দাম বেড়ে গেছে। এখন আধা কেজি চালের দাম ২৮ টাকা। এক মাস আগেও আধা কেজি চালের দাম ছিল ২৫ টাকা।
+
+দেখা যাচ্ছে, চালের দাম নির্দিষ্ট থাকছে না। পরিবর্তিত হয়ে যাচ্ছে। আজকে আধা-কেজি চালের দাম ২৮ টাকা হলেও, এক মাস পরে এই আধা কেজি চালের দাম আর ২৮ টাকা থাকবে না। সেটা হয়ে যাবে ২৯ টাকা, ৬ মাস পরে হয়ে যাবে ৩৪ টাকা আর ১ বছর পরে কত হবে, আল্লাহই মালুম। হয়তো ৩৯, না-হয় ৪১ টাকা হবে।
+
+আধা কেজি চালের দাম আজীবন কিন্তু একই থাকবে না। মাসে মাসে পরিবর্তিত বা চেইঞ্জ হয়ে যাবে। এইটাই সিস্টেম। এইটাকে একটু ঘুরিয়ে বললে বলতে পারস, চালের দাম পরিবর্তিত হচ্ছে বা vary করতেছে। কোনো একটা জিনিস ভ্যারি(vary) করলে বা পরিবর্তিত হলে, তাকে প্রোগ্রামিং-এর ভাষায় ভেরিয়েবল বলে।
+</p>
+<p>ভেরিয়েবল (variable) একটা ইংরেজি শব্দ। সন্ধি বিচ্ছেদের মতো মনে করতে পারস, এই শব্দের মধ্যে দুইটা অংশ আছে। ধর ভেরিয়েবলের সন্ধিবিচ্ছেদ করলে vary + able = variable হবে। প্রথম অংশ ‘ভ্যারি’ (vary) যার মানে হচ্ছে, কোনো একটা জিনিস ভ্যারি করে বা পরিবর্তিত হয় আর দ্বিতীয় অংশ ‘এবল’ (able), মানে যোগ্য। তাই ভেরিয়েবল বলতে বুঝায় কোনো একটা জিনিস যেটা ভ্যারি করার যোগ্য, পরিবর্তিত হতে পারে বা চেইঞ্জ হতে পারে। যেমন, আধা কেজি চালের দাম, এক কেজি পেয়াজের দাম, ইত্যাদি।
+
+</p>
+<p>আধা কেজি ডালের দামও কিন্তু সারাজীবন একই থাকবে না। সেটাও মাসে মাসে পরিবর্তিত হবে। এজন্য আধা কেজি ডালের দামও একটা ভেরিয়েবল। একইভাবে ডিমের দাম, লবণের দাম, চিনির দাম, পেঁয়াজের দাম, সবকিছুর দামই কিন্তু পরিবর্তিত হবে। তাই এই সবগুলোই এক একটা ভেরিয়েবল।
+</p>
+			</section>
+			<section class="sectionContainer">
+				<h4 class="sectionHeader"><strong>মসলার কৌটা: </strong></h4>
+				<p>সবার রান্নাঘরে অনেকগুলা ছোট ছোট মসলার কৌটা থাকে। কৌটাগুলা দেখতে একই রকমের হয়। এই কৌটাগুলির ভিতরে মসলার পরিমাণ নির্দিষ্ট থাকে না। রান্নাবান্না করলে কৌটার ভিতরের মসলা কমে যায়। আবার বাজার থেকে মসলা কিনে এনে কৌটার মধ্যে রাখলে, কৌটার ভিতরের জিনিসের পরিমাণ বেড়ে যায়। যেহেতু কৌটার ভিতরে জিনিসের পরিমাণ ভ্যারি করতেছে, সেহেতু এক একটা কৌটাকে এক একটা ভেরিয়েবল চিন্তা করতে পারস। </p>
+
+				<p>
+
+
+কৌটাগুলো দেখতে একই রকমের হওয়ায় প্রথম সমস্যা হচ্ছে, কোন কৌটার মধ্যে কী আছে সেটা সহজে বলা যায় না। হয়তো কোনোটার ভিতরে হলুদ, কোনোটার ভিতরে মরিচ, আবার কোনোটার মধ্যে লবণ আছে। কোন কৌটার মধ্যে কী আছে, সেটা সহজে খুঁজে বের করার জন্য দেখবি অনেকেই কৌটার উপর নাম লিখে রাখে। অর্থাৎ এক এক কৌটাকে এক একটা নাম দেয়া হয়। এখন ‘লবণ’ নামের কৌটা বের করলেই লবণের পরিমাণ জানতে পারবি। একইভাবে ‘হলুদ’ নামের কৌটা থেকে হলুদের পরিমাণ জানতে পারবি। কৌটার ভিন্ন ভিন্ন নাম থাকার কারণে হলুদ, মরিচ, লবণ খুঁজে বের করতে তেমন কষ্ট হয় না।
+</p>
+
+
+			</section>
+			<section class="sectionContainer">
+				<h4 class="sectionHeader"><strong>ভেরিয়েবলের মশলা:::</strong></h4>
+				<p>
+মসলার কৌটার মতো ভেরিয়েবলগুলোরও এক একটা নাম থাকে। যাতে নাম ধরে ডাক দিয়ে সহজেই ভেরিয়েবলকে খুঁজে বের করা যায় এবং ভেরিয়েবলের মান জানা যায়। যেমন, ‘চালের দাম’ নামে একটা ভেরিয়েবল থাকলে, 'চালের দাম' বলে ডাক দিলে, চালের দাম ভেরিয়েবলের মান জানতে পারবি। একইভাবে 'ডালের দাম' নামক ভেরিয়েবলের নাম ধরে ডাক দিলে, ডালের দাম ভেরিয়েবলের মান জানতে পারবি।
+
+</p>
+<p>
+আরেকটা কথা, দোকানদার কিন্তু আগে থেকেই চালের দাম ঠিক করে রাখে। যাতে কেউ জিজ্ঞেস করলে সাথে সাথে চালের দাম বলে দিতে পারে। দোকানদারের চালের দাম ঠিক করার সেই কাজটাকে বলতে পারস- দোকানদার চালের দাম সেট করতেছে। অর্থাৎ ‘চালের দাম’ নামক ভেরিয়েবলের মান সেট করতেছে। </p>
+<p>মনে রাখবি, ভেরিয়েবল হচ্ছে এমন একটা জিনিস যার –
+
+</p>
+<ol>
+	<li>ভ্যালু বা মান পরিবর্তিত হতে পারে </li>
+	<li>নির্দিষ্ট একটা নাম থাকবে</li>
+	<li>সেই নাম ধরে জিজ্ঞেস করলে, মান জানা যাবে</li>
+</ol>
+
+<p>এত কিছু কঠিন লাগলে চোখ বন্ধ করে বলবি ভেরিয়েবল হচ্ছে- আধা কেজি চালের দাম।</p>
+
+
+			</section>
+			<section class="sectionContainer">
+				<h4 class="sectionHeader"><strong>পভেরিয়েবল ক্যামনে লিখে: ::</strong></h4>
+				<p>
+চালের দাম জানার জন্য একটা ভেরিয়েবল লিখতে চাইলে প্রথমেই ভেরিয়েবলটার একটা নাম দিতে হবে। ভেরিয়েবলের নাম দেয়া অনেকটা মসলার কৌটার উপরে নাম লেখার মতো। হলুদের কৌটার উপর 'হলুদ' লেখা থাকে যাতে নাম দেখলে বুঝা যায় ভিতরে কি আছে। একইভাবে, ভেরিয়েবলের এমন একটা নাম দিতে হবে যাতে নাম শুনেই বুঝা যায়, এই ভেরিয়েবলের ভিতরে কি থাকতে পারে। </p>
+<p>তুই যেহেতু চালের দাম জানতে চাস, সেহেতু ভেরিয়েবলের নাম দিবি, ‘চালের দাম’। যেটাকে ইংরেজিতে লিখবি chalerDam । এখন chalerDam ভেরিয়েবলের মান সেট করতে চাইলে, সমান চিহ্ন দিয়ে, যে মান সেট করতে চাইবি সেটা লিখে দিবি। যেমন, তুই chalerDam ভেরিয়েবলের মান 28 টাকা সেট করার জন্য নিচের মতো লিখবি। </p>
+<p>chalerDam = 28</p>
+<p>একটা জিনিস খেয়াল করবি, ভেরিয়েবলের নাম ইংরেজিতে লেখার সময় একশব্দে লিখতে হয় (মাঝখানে কোনো গ্যাপ বা খালি জায়গা দেয়া যায় না)। সেজন্য chaler Dam ভেরিয়েবলের নাম হিসেবে লেখা যাবে না। একশব্দে chalerDam লিখতে হবে।  </p>
+			</section>
+			<section class="sectionContainer">
+				<h4 class="sectionHeader"><strong>দাদার বয়স:</strong></h4>
+				<p>
+আরেকটা ভেরিয়েবলের কথা বলি। ধর, কেউ তোর দাদাকে গিয়ে জিজ্ঞেস করল, আপনার বয়স কত? তোর দাদা এই বছর বলবেন 69, পরের বছর বলবেন 70, তার পরের বছর জিজ্ঞেস করলে বলবেন 71। এই যে তোর দাদার বয়সটা, এইটা কিন্তু পরিবর্তিত বা চেইঞ্জ হচ্ছে, তার মানে এটা বছর বছর ভ্যারি করতেছে। অর্থাৎ বয়সের মান বা value পরিবর্তিত হচ্ছে। তাই এইটাকেও একটা variable বলতে পারস। এখন বয়স নামে একটা ভেরিয়েবল লিখতে চাইলে, ভেরিয়েবলের নাম দিবি বয়স। বয়সকে ইংরেজিতে বলে ‘age’। আর যদি ‘age’ এর মান 69 সেট করতে চাস, তাহলে লিখবি-
+
+
+
+
+</p>
+<p>age = 69 </p>
+<p>শুধু দাদার বয়স না, দাদার ওজন, চশমার পাওয়ারও পরিবর্তন হয়। তাই এগুলোও ভেরিয়েবল। বয়সের ভেরিয়েবল যেভাবে লিখছস করছস, এই ভেরিয়েবলগুলোও একই পদ্ধতিতে লিখতে পারবি।</p>
+<p><a href="https://www.rokomari.com/book/112222">হাবলুদের জন্য প্রোগ্রামিং</a> বইয়ের একটা খুচরা অংশ  </p>
+			</section>
+		</div>
+		<hr>
+		<div class="fb-like" data-href="http://jhankarmahbub.com/hablu/book/variable.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+		<hr>
+		<div class="fb-comments" data-href="http://jhankarmahbub.com/hablu/book/variable.html" data-width="640" data-numposts="5" data-colorscheme="light"></div>
+		<hr>
+		<div>
+			<h3><strong>Question or Feedback:</strong></h3>
+			<p style="font-size: 1.2em;">যদি লোকসম্মুখে প্রশ্ন জিগ্গেস করতে বা উপদেশ, বকাঝকা, গালাগালি, হুমকি দিতে সংকোচ লাগে তাইলে ইমেইল করে  দেন  <a href="mailto:jhankar.mahbub@gmail.com">jhankar.mahbub@gmail.com</a></p>
+			<hr>
+		</div>
+	</div>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-40601505-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+</body>
+</html>
