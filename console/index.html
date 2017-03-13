@@ -12,16 +12,20 @@
 	<link rel="stylesheet" type="text/css" href="../scripts/css/bootstrap.min.css">
 </head>
 <body>
-<form>
-  <textarea autofocus id="exec" spellcheck="false" autocapitalize="off" placeholder="write here. click Run to see output" rows="1" autocorrect="off"></textarea>
-</form>
-<button type="button" id="btn-run" class="btn btn-success btn-sm" aria-label="Left Align">
-  <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-  Run
-</button>
-<div id="console">
-	<ul id="output"></ul>
-</div>
+	<div class="input-container">
+		<form>
+		  <textarea autofocus id="exec" spellcheck="false" autocapitalize="off" placeholder="write here. click Run to see output" rows="1" autocorrect="off"></textarea>
+		</form>
+	</div>
+	<div class="output-container">
+		<button type="button" id="btn-run" class="btn btn-success btn-sm" aria-label="Left Align">
+		  <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+		  Run
+		</button>
+		<div id="console">
+			<ul id="output"></ul>
+		</div>
+	</div>
 <script src="../scripts/js/prettify.packed.js"></script>
 <script src="../scripts/js/EventSource.js"></script>
 <script src="../scripts/js/console.js"></script>
