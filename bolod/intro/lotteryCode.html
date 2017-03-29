@@ -1,0 +1,112 @@
+<html>
+<head>
+  <script>
+// collect name and profile link
+
+
+var participants = [];
+var allCommenters = document.getElementsByClassName('UFICommentActorName');
+
+for(var i = 0; i< allCommenters.length; i++){
+
+  var commenter = {};
+  var link = allCommenters[i];
+  var profileLink = link.href.split('?')[0];
+  commenter.name = link.text;
+  commenter.profile = profileLink;
+  participants.push(commenter);
+}
+
+console.log(participants.length);
+JSON.stringify(participants);
+
+
+  </script>
+  <script
+
+var numberOfWinner = 25;
+var participants = [];
+var uniqueParticipants = [];
+var winners = [];
+
+var profileComments = document.getElementsByClassName('UFICommentActorName');
+
+// var pageComments = document.getElementsByClassName('UFICommentActorName');
+
+function addParticipants(allComments){
+  for(var i = 0; i< allComments.length; i++){
+    var commenter = {};
+
+    var commentLink = allComments[i];
+    commenter.name = commentLink.text;
+    commenter.profile = commentLink.href;
+
+    participants.push(commenter);
+  }
+}
+
+
+
+addParticipants(profileComments);
+// addParticipants(pageComments);
+
+// remove duplicate
+var uniqueProfile = [];
+for(var i = 0; i< participants.length; i++){
+  var commenter = participants[i];
+  var abc = uniqueProfile.indexOf(commenter.profile);
+  if(abc == -1){
+    uniqueProfile.push(commenter.profile);
+  }
+}
+
+//select winner
+for(var i = 0; i< numberOfWinner; i++){
+  var randomNumber = Math.random();
+  var winningNumber = randomNumber * uniqueParticipants.length;
+  var winnerPosition = Math.round(winningNumber);
+  var winner = uniqueParticipants[winnerPosition];
+  console.log(winner.name, winner.profile);
+  winners.push(winner);
+}
+
+
+  </script>
+  <script>
+
+var numberOfWinner = 25;
+var participants = [];
+
+
+var allCommenters = document.getElementsByClassName('UFICommentActorName');
+
+for(var i = 0; i< allCommenters.length; i++){
+  var link = allCommenters[0];
+  var profileLink = link.href.split('?')[0];
+  participants.push(profileLink);
+}
+
+
+
+// remove duplicate
+var uniqueProfiles = [];
+for(var i = 0; i< participants.length; i++){
+  var commenter = participants[i];
+  var position = uniqueProfiles.indexOf(commenter);
+  if(position == -1){
+    uniqueProfiles.push(commenter);
+  }
+}
+
+  //select winner
+for(var i = 0; i< numberOfWinner; i++){
+  var randomNumber = Math.random();
+  var winningNumber = randomNumber * uniqueProfiles.length;
+  var winnerPosition = Math.round(winningNumber);
+  var winnerProfile = uniqueProfiles[winnerPosition];
+  console.log(winnerProfile);
+  var position = uniqueProfiles.indexOf(winnerProfile);
+  uniqueProfiles.splice( position, 1 );
+}
+  </script>
+</head>
