@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="inspiration" content="The shortest path for ফাঁকিবাজ">
+		<meta name="description" content="যারা প্রোগ্রামিংয়ের একদম কিছু জানে না। তারা প্রোগ্রামিং শেখার সেকেন্ড রাউন্ড    কি কি শিখবে">
+	<title>প্রোগ্রামিং শেখার সেকেন্ড রাউন্ড  </title>
+	<link href="../../scripts/css/site.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../scripts/css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="../../images/favicon.png" />
+</head>
+<body>
+	<nav id="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <nav class="navbar navbar-default navbar-fixed-top">
+                          <div class="container-fluid">
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                                  <a class="navbar-brand center-block" href="../../">
+                                    <img src="../../images/logo.png" height="50" width="167" alt="">
+                                  </a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                              <ul class="nav navbar-nav navbar-right" id="top-nav">
+                                <li class=""><a href="../../">Home</a></li>
+                                <li class=""><a href="../../hablu/intro/index.html">Hablu</a></li>
+																<li class="active"><a href="index.html">Programming</a></li>
+                                <li class=""><a href="../../web/basic/index.html">Web</a></li>
+                                <li class=""><a href="../../dreamJob/">dream job</a></li>
+                                <li class=""><a href="../../motivate/">Motivation</a></li>
+                                <li><a href="../../guru/">Guru</a></li>
+                                <li class=""><a href="../../tips/">Tips</a></li>
+                                <li class=""><a href="../../jkr/">About me</a></li>
+                              </ul>
+                            </div><!-- /.navbar-collapse -->
+                          </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                </div><!-- .col-md-12 close -->
+            </div><!-- .row close -->
+        </div><!-- .container close -->
+	</nav>
+	<div class="jumbotron">
+      <div class="container">
+        <h2>প্রোগ্রামিং শেখার সেকেন্ড রাউন্ড</h2>
+        <p>The shortest path for ফাঁকিবাজ</p>
+      </div>
+    </div>
+	<div class="container">
+		<h4 class="hide"> <a href="index.html">স্টাডি প্ল্যানের মূল পাতা</a></h4>
+		<p>প্রথম সপ্তাহের স্টাডিপ্ল্যান:<a href="week1.html">এইখানে</a></p>
+		<div class="row ">
+			<section class="sectionContainer">
+				<h4 class="sectionHeader"><strong>শুরু করার আগে:</strong></h4>
+				<p>এইটা প্রাথমিক স্টেজের শেষ সপ্তাহ। এরপরে শুরু হবে প্রাকটিস। এই সপ্তাহে জিনিসগুলা বেশি কঠিন কিছু না। রবং বিভিন্ন জিনিস সম্পর্কে ধারণা নেয়া।  </p>
+				<p>এই সপ্তাহের জিনিসগুলা চাইলে গুগলে সার্চ দিয়ে দিয়ে বের করে শিখতে পারো। অথবা প্রোগ্রামিংয়ের বলদ টু বস বইটা যোগাড় করে পড়তে পারো। বলদ টু বস অনলাইনে অর্ডার দিতে চাইলে <a href="https://www.rokomari.com/book/128993">এইখানে</a> যাও।</p>
+				<br>
+			</section>
+			<section class="sectionContainer">
+				<h4 class="sectionHeader"><strong>অবজেক্ট: মার্চ ১৫ (বুধবার)</strong></h4>
+				<p>সময় দিবা: ২ ঘন্টা</p>
+				<p><strong>অবজেক্ট:</strong> যে জিনিসগুলো শিখতে হবে</p>
+				<ol>
+					<li>প্রোগ্রামিংয়ে অবজেক্ট কি জিনিস</li>
+					<li>অবজেক্টের প্রপার্টি কি জিনিস</li>
+					<li>কিভাবে অবজেক্ট ডিক্লেয়ার করা যায়</li>
+					<li>কিভাবে অবজেক্টের প্রপার্টি যোগ করা হয়</li>
+					<li>একাধিক প্রোপার্টি যোগ করা</li>
+					<li>প্রোপার্টির মান চেইঞ্জ করা</li>
+					<li>প্রপার্টির মান ভেরিয়েবলে রেখে সেটা আউটপুট হিসেবে দেখা </li>
+				</ol>
+				<br>
+				<p>শেখা শেষ হলে নিচের প্রশ্নগুলো দিয়ে প্রাকটিস করবে (এগুলা প্রতিযোগিতার প্রশ্ন না, প্রাকটিসের প্রশ্ন)</p>
+				<ol>
+					<li>আশেপাশে খুঁজে যেকোন একটা অবজেক্টের নাম লিখ</li>
+					<li>তোর নিজের নাম দিয়ে একটা অবজেক্ট ডিক্লেয়ার কর।</li>
+					<li>তোর নিজের নামে ডিক্লেয়ার করা অবজেক্টে সেখানে তিনটা প্রপার্টি লিখবি। যার মধ্যে একটা প্রপার্টির নাম হবে জান পাখি (jaanPakhi) এবং সেই প্রপার্টির মান হবে তোর প্রিয়জনের নাম।</li>
+					<li>ধর কিছুদিন পরে তোর আগের রিলেশন ভেঙ্গে নতুন আরেকজনের সাথে সিস্টেম হয়ে গেছে। তাই তুই তোর jaanPakhi প্রপার্টির মান চেইঞ্জ করে নতুন নাম সেট করে ফেল। যাতে তোর নতুন প্রিয়জন আগেরজনের নাম না জেনে যায়।</li>
+					<li>কাক (crow) নাম একটা অবজেক্ট ডিক্লেয়ার কর। সেখানে যেকোন দুইটা প্রপার্টি যোগ কর</li>
+					<li>একটা ভেরিয়েবল ডিক্লেয়ার কর। সেই ভেরিয়েবলের মান হবে, তোর কাক অবজেক্টের যেকোন একটা প্রপার্টি এর মান। </li>
+				</ol>
+				<small><a href="../practice/object.html">এইখানে</a> গিয়ে উপরের প্রশ্নগুলার উত্তর লিখতে পারো বা অন্যদের উত্তর দেখতে পারো।</small>
+			</section>
+			<section class="sectionContainer">
+				<h4 class="sectionHeader"><strong>ক্লাস: মার্চ ১৬ (বৃহস্পতিবার)</strong></h4>
+				<p>সময় দিবা: ৩ ঘন্টা</p>
+				<p><strong>ক্লাস: </strong>যে জিনিসগুলো শিখতে হবে</p>
+				<ol>
+					<li>প্রোগ্রামিংয়ে  ক্লাস কি জিনিস </li>
+					<li>যদি অবজেক্ট দিয়েই কাজ হয় তাহলে ক্লাস লাগবে কেন</li>
+					<li>ক্লাস কিভাবে ডিক্লেয়ার করা হয়। </li>
+					<li>কিভাবে ক্লাস থেকে অবজেক্ট বানানো হয় </li>
+					<li>ক্লাসের মধ্যে মেথড বা ফাংশন দিয়ে কি করা হয় </li>
+					<li>কিভাবে মেথড ডিক্লেয়ার করে</li>
+				</ol>
+				<br>
+				<p>শেখা শেষ হলে নিচের প্রশ্নগুলো দিয়ে প্রাকটিস করবে</p>
+				<ol>
+					<li>পাখি (Bird) নামে একটা ক্লাস ডিক্লেয়ার কর </li>
+					<li>তোর Bird নামক ক্লাস থেকে জানপাখি(jaanPakhi) নামে একটা অবজেক্ট বানা</li>
+					<li>স্টুডেন্ট (Student) নামে একটা ক্লাস ডিক্লেয়ার কর। সেখানে রোল নং(rollNumber), নাম (name) এবং রেজাল্ট(result) নামে কমপক্ষে তিনটা প্রপার্টি রাখবি।  </li>
+					<li>স্টুডেন্ট ক্লাস থেকে তোর নামে একটা অবজেক্ট বানা</li>
+					<li>তোর স্টুডেন্ট ক্লাস থেকে তোর ফ্রেন্ডের নামে আরেকটা অবজেক্ট বানা  </li>
+					<li>এখন student ক্লাসে রেজাল্ট দে (getResult) নামে একটা মেথড যোগ কর। যেটা result প্রপার্টির মান আউটপুট হিসেবে দিয়ে দিবে </li>
+				</ol>
+				<small><a href="../practice/class.html">এইখানে</a> গিয়ে উপরের প্রশ্নগুলার উত্তর লিখতে পারো বা অন্যদের উত্তর দেখতে পারো।</small>
+			</section>
+			<section class="sectionContainer">
+				<h4 class="sectionHeader"><strong>অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং(OOP) ও রিভিশন: মার্চ ১৭ (শুক্রবার)</strong></h4>
+				<p>সময় দিবা: ৫ ঘন্টা</p>
+				<p>শুক্রবার ছুটির দিন তাই একটু বেশি সময় দিবা। কোন ডেটিং-ফেটিং রাখবি না। সলিড ৩ ঘন্টা নতুন জিনিস প্রোগ্রামিং শিখবি আর ২ ঘন্টা আগের দুইদিনের জিনিস রিভাইজ দিবা। </p>
+				<p><strong>অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং: </strong>যে জিনিসগুলো শিখতে হবে</p>
+				<ol>
+					<li>অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং কি জিনিস </li>
+					<li>Inheritance কি জিনিস </li>
+					<li>কিভাবে inheritance ব্যবহার করে একাধিক ক্লাসের মধ্যে কিছু কমন এবং কিছু আনকমন বৈশিষ্ট্য রাখা যায় </li>
+					<li> Encapsulation সম্পর্কে প্রাথমিক ধারণা। এইটা কি জিনিস সেটা গুগল করে জানলেই চলবে </li>
+					<li> Polymorphism সম্পর্কে প্রাথমিক ধারণা। এইটা কি জিনিস সেটা গুগল করে জানলেই চলবে </li>
+				</ol>
+				<p>শেখা শেষ হলে নিচের প্রশ্নগুলো দিয়ে প্রাকটিস করবে</p>
+				<ol>
+					<li>অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং কি জিনিস </li>
+					<li>Inheritance কি জিনিস </li>
+					<li> সহজ করে লিখ Encapsulation কি জিনিস। </li>
+					<li> Polymorphism সম্পর্কে গুগলে সার্চ দিলে কি পাওয়া যায়। </li>
+				</ol>
+				<small><a href="../practice/oop.html">এইখানে</a> গিয়ে উপরের প্রশ্নগুলার উত্তর লিখতে পারো বা অন্যদের উত্তর দেখতে পারো।</small>
+				<br>
+				<br>
+				<p><strong>রিভাইজ:</strong> রিভাইজ দেয়া কঠিন কিছু না। জাস্ট, অবজেক্ট, ক্লাস ও  অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং এর প্রশ্নগুলো আরেকবার নিজে নিজে প্রাকটিস করবা। অন্যরা কি কি উত্তর দিছে সেগুলা দেখবি। রিভিশন না দিলে কিন্তু দুই -দিনেই সব নাই হয়ে যাবে। </p>
+				<p>রিভাইজ দেয়ার সময়, নিচের কাজগুলি করবা</p>
+				<ol>
+					<li>যা যা শিখছস সব গুছিয়ে ছোট করে লিখে ফেল। লেখাটা ইম্পর্টান্ট (লিখতে গেলে এখন একটু বেশি সময় লাগলেও, জিনিসগুলা আরো অনেক অনেক বেশি ক্লিয়ার হবে। আরো বেশিদিন মনে থাকবে।)</li>
+					<li>অবজেক্ট কি জিনিস কিভাবে ডিক্লেয়ার করতে হয়। উদাহরণসহ ১০ থেকে ২০ লাইনের মধ্যে লিখে ফেল</li>
+					<li> ক্লাস কিভাবে লেখা হয়। কয়েকটা উদাহরণসহ ১০ থেকে ১৫ লাইনের মধ্যে লিখে ফেল</li>
+					<li> অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং, Inheritance, Encapsulation, Polymorhphism সম্পর্কে কি কি জানলি সেগুলা ২৫ থেকে ৩০ লাইনের মধ্যে লিখে ফেলবি</li>
+				</ol>
+			</section>
+			<section class="sectionContainer">
+				<h4 class="sectionHeader"><strong>প্রোগ্রামিংয়ের হাবিজাবি জিনিসপত্র: মার্চ ১৮ (শনিবার)</strong></h4>
+				<p>সময় দিবা: ২ ঘন্টা</p>
+				<p><strong>প্রোগ্রামিংয়ের হাবিজাবি জিনিসপত্র:</strong>যে জিনিসগুলো শিখতে হবে</p>
+				<ol>
+					<li>টাইম কমপ্লেক্সিটি সম্পর্কে হালকা ধারণা। কোথাও খুঁজে না পাইলে <a href="http://habluderadda.com/concepts/algorithm/complexity.html">এইখানে</a> দেখ </li>
+					<li>Recursive Function  সম্পর্কে খুচরা ধারণা। কোথাও খুঁজে না পাইলে <a href="http://habluderadda.com/concepts/algorithm/recursion.html">এইখানে</a> দেখ</li>
+					<li>প্রোগ্রামিং করার সময় কমেন্ট করার প্রয়োজনীয়তা কি। কোথাও খুঁজে না পাইলে <a href="http://habluderadda.com/concepts/other/comment.html">এইখানে</a> দেখ</li>
+					<li>What is software bug লিখে গুগুলে সার্চ দিলে কি বুঝা যায়</li>
+					<li>www.stackoverflow.com নামে একটা ওয়েবসাইট কি। সেখানে কি পাওয়া যায় এই বিষয়ে ধারণা নাও </li>
+				</ol>
+				<br>
+				<p>শেখা শেষ হলে নিচের প্রশ্নগুলো দিয়ে প্রাকটিস করবে</p>
+				<ol>
+					<li>সহজ করে লিখ- টাইম কমপ্লেক্সিটি কি জিনিস। </li>
+					<li>রিকারসন ফাংশন কি জিনিস। </li>
+					<li>প্রোগ্রামিং ল্যাঙ্গুয়েজের সিস্টেম অনুসারে একটা কমেন্ট কর। </li>
+					<li>What is software bug লিখে গুগুলে সার্চ দিলে কি দেখায়</li>
+					<li>www.stackoverflow.com ওয়েবসাইট প্রোগ্রামাররা গিয়ে কি করে</li>
+				</ol>
+				<small><a href="../practice/habijabi.html">এইখানে</a> গিয়ে উপরের প্রশ্নগুলার উত্তর লিখতে পারো বা অন্যদের উত্তর দেখতে পারো।</small>
+			</section>
+			<section id="day-5-for-loop" class="sectionContainer">
+				<h4 class="sectionHeader"><strong>ডাটাবেইজ বেসিক: মার্চ ১৯ (রবিবার)</strong></h4>
+				<p>সময় দিবা: ৩ ঘন্টা</p>
+				<p><strong> ডাটাবেইজ বেসিক:</strong>যে জিনিসগুলো শিখতে হবে</p>
+				<ol>
+					<li>ডাটাবেইজ কি জিনিস। এইটা  কেন ব্যবহার করা হয় </li>
+					<li>কিভাবে ডাটা বেইজে ডাটা রাখা হয়। </li>
+					<li>কিভাবে ডাটা বেইজ থেকে ডাটা বের করে আনা হয়। </li>
+					<li>ডাটাবেইজ টেবিল কি জিনিস। </li>
+					<li>কিভাবে টেবিলে ডাটা রাখা হয়। </li>
+					<li>ডাটাবেইজ টেবিলে রেকর্ড এবং কলামে কি রাখা হয়।</li>
+					<li>চাইলে <a href="https://www.youtube.com/watch?v=t8jgX1f8kc4">এই </a> ভিডিও দেখতে পারো, আরো বেশি জানতে চাইলে <a href="https://www.w3schools.com/sql/sql_intro.asp">এইখানে</a> যাও</li>
+				</ol>
+				<br>
+				<p>শেখা শেষ হলে নিচের প্রশ্নগুলো দিয়ে প্রাকটিস করবে</p>
+				<ol>
+					<li>ডাটাবেইজ কি জিনিস। </li>
+				<li>কিভাবে টেবিলে ডাটা রাখা হয়। </li>
+				<li>ডাটাবেইজ টেবিল কি জিনিস। </li>
+				<li>ডাটাবেইজ টেবিলে রেকর্ড এবং কলামে কি রাখা হয়।</li>
+				<li>mySql লিখে গুগলে সার্চ দিলে কি দেখায়</li>
+				<li> mySql ডাটাবেইজর একটা টেবিল থেকে সবগুলা রেকর্ড আউটপুট হিসেবে পাওয়ার জন্য কিভাবে কোড লিখতে হয়। </li>
+				</ol>
+				<small><a href="../practice/database.html">এইখানে</a> গিয়ে উপরের প্রশ্নগুলার উত্তর লিখতে পারো বা অন্যদের উত্তর দেখতে পারো।</small>
+			</section>
+			<section class="sectionContainer">
+				<h4 class="sectionHeader"><strong>সোর্স কন্ট্রোল: মার্চ ২০ (সোমবার)</strong></h4>
+				<p>সময় দিবা: ২ ঘন্টা</p>
+				<p><strong>সোর্স কন্ট্রোল: </strong>যে জিনিসগুলো শিখতে হবে</p>
+				<ol>
+					<li>সোর্স কন্ট্রোল বা ভার্সন কন্ট্রোল কি জিনিস </li>
+					<li>গিটহাব কি জিনিস। না জানলে <a href="https://www.youtube.com/watch?v=w3jLJU7DT5E">এই ভিডিও</a> দেখ </li>
+					<li>গিটহাবে একাউন্ট না থাকলে <a href="https://github.com/join">এইখানে</a> গিয়ে একাউণ্ট খোল</li>
+					<li>আরো বেশি জানতে চাইলে <a href="https://www.youtube.com/watch?v=-U-eUHI6euM">এই ভিডিও</a> দেখতে পারো। </li>
+				</ol>
+				<br>
+				<p>শেখা শেষ হলে নিচের প্রশ্নগুলো দিয়ে প্রাকটিস করবে</p>
+				<ol>
+					<li>সোর্স কন্ট্রোল (source control) থাকার দরকার কি। </li>
+					<li>গিটহাবে একাউন্ট এর লিংক দাও। যদি আগে থেকে একাউন্ট খোলা না থাকে। তাহলে নতুন একাউন্ট খুলে নিচে তোমার একাউন্টের লিংক দাও।</li>
+				</ol>
+				<small><a href="../practice/github.html">এইখানে</a> গিয়ে উপরের প্রশ্নগুলার উত্তর লিখতে পারো বা অন্যদের উত্তর দেখতে পারো।</small>
+			</section>
+			<section class="sectionContainer">
+				<h4 class="sectionHeader"><strong>রিভিশন দেয়ার দিন: মার্চ ২১ (মঙ্গলবার)</strong></h4>
+				<p>সময় দিবা: ৪ ঘন্টা</p>
+				<p>প্রথম প্রথম অচেনা রাস্তা দিয়ে যাওয়া শুরু করলে, রাস্তা ভুল করে অন্য রাস্তা দিয়ে চলে যাওয়াটা খুবই স্বাভাবিক। তবে চার-পাঁচবার একই রাস্তা দিয়ে যাওয়া আসা করলে, আর ভুল হয় না। প্রোগ্রামিং জিনিসটাও একই রকমের। প্রথম প্রথম বুঝতে পারবে না। কঠিন লাগবে। ভুল করে বসবে। কিন্তু বেশ কয়েকবার রিভিশন দিলে- সব পানির সোজা হয়ে যাবে। </p>
+				<p>এখন গত ছয়দিন যা যা শিখছস সেগুলা রিভিশন দিয়ে নে। রিভিশন দেয়ার সময় নিচের কাজগুলা করবা</p>
+				<ol>
+					<li>শুক্রবারে অবজেক্ট, ক্লাস ও অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং এর সামারি লিখছিলি। সেগুলো আবার পড়ে দেখ। </li>
+					<li>রিভিশন দেয়ার সময় যে কোডিং প্রাকটিস করছিলি, সেগুলো প্রাকটিস কর </li>
+					<li>টাইম কমপ্লেক্সিটি বলতে কি শিখছস। সেটার উদারহণসহ একটা ছোট সামারি লিখে ফেল। </li>
+					<li>Database এ কি কি শিখছস সেটাও লিখে ফেল।  </li>
+					<li>তোর সবগুলা সামারি একসাথ করে তোর নিজের জন্য একটা পিডিএফ বানিয়ে রাখ</li>
+					<li>এই যে সামারিগুলা লিখছস। এইগুলা তোর অর্জন। এইগুলা তোর সম্পত্তি। প্রথম কয়েক সপ্তাহ এইগুলা রিভিশন দিলে, জীবনেও প্রোগ্রামিংয়ের বেসিক জিনিসগুলা ভুলবি না। </li>
+				</ol>
+				<small><a href="../practice/finish.html">এইখানে</a> গিয়ে উপরের সামারিগুলা লিখতে পারো বা অন্যদের সামারি দেখতে পারো।</small>
+			</section>
+
+		</div>
+
+		<hr>
+		<div class="hide">
+          <h4>FB post</h4>
+			<div class="fb-post" data-href="https://www.facebook.com/JhankarMahbub/posts/10153151874971891" data-width="466"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/JhankarMahbub/posts/10153151874971891">Post</a> by <a href="https://www.facebook.com/JhankarMahbub">Jhankar Mahbub</a>.</div></div>
+        </div>
+		<hr>
+		<div>
+			<div class="fb-like" data-href="http://jhankarmahbub.com/programming/learn/week3.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+			<hr>
+			<div class="fb-comments" data-href="http://jhankarmahbub.com/programming/learn/week3.html" data-width="640" data-numposts="5" data-colorscheme="light"></div>
+			<hr>
+		</div>
+		<div>
+			<h3><strong>Question or Feedback:</strong></h3>
+			<p style="font-size: 1.2em;">যদি লোকসম্মুখে প্রশ্ন জিগ্গেস করতে বা উপদেশ, বকাঝকা, গালাগালি, হুমকি দিতে সংকোচ লাগে তাইলে ইমেইল করে  দেন  <a href="mailto:jhankar.mahbub@gmail.com">jhankar.mahbub@gmail.com</a></p>
+			<hr>
+		</div>
+	</div>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-40601505-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+</body>
+</html>
