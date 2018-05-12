@@ -108,14 +108,14 @@ function run(cmd) {
     setCursorTo('');
     return ['info', 'sent remote command'];
   } else {
-    try {
-      if ('CoffeeScript' in sandboxframe.contentWindow) cmd = sandboxframe.contentWindow.CoffeeScript.compile(cmd, {bare:true});
-      rawoutput = sandboxframe.contentWindow.eval(cmd);
-    } catch (e) {
-      rawoutput = e.message;
-      className = 'error';
-    }
-    return [className, cleanse(stringify(rawoutput))];
+    // try {
+    //   if ('CoffeeScript' in sandboxframe.contentWindow) cmd = sandboxframe.contentWindow.CoffeeScript.compile(cmd, {bare:true});
+    //   rawoutput = sandboxframe.contentWindow.eval(cmd);
+    // } catch (e) {
+    //   rawoutput = e.message;
+    //   className = 'error';
+    // }
+    // return [className, cleanse(stringify(rawoutput))];
   } 
 }
 
